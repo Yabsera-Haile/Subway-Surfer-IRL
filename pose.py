@@ -1,21 +1,4 @@
 #!/usr/bin/env python3
-"""
-STEP 1 - Pose pipeline + debug view.
-
-Goal: prove you can get landmarks off your webcam in real time, and find out
-where your milliseconds are actually going before you write any ML.
-
-This doubles as the shared pose module for the rest of the project. Importing
-it is cheap and has no side effects - nothing is downloaded and no camera is
-touched until you call ensure_model() / make_landmarker() yourself:
-
-    from pose import make_landmarker, draw_skeleton, L_SHOULDER, NAMED
-
-Run as a script for the debug viewer:  python pose.py
-Keys: q = quit,  l = dump one frame of raw landmark values to the terminal
-
-The model file downloads automatically on first run (~9 MB).
-"""
 
 import collections
 import os
@@ -29,21 +12,12 @@ import mediapipe as mp
 from mediapipe.tasks import python as mp_python
 from mediapipe.tasks.python import vision as mp_vision
 
-# --------------------------------------------------------------------------
-# Model. "lite" is the fast one - start here. There are also _full and _heavy
-# variants on the MediaPipe models page if you later want more accuracy.
-# --------------------------------------------------------------------------
 MODEL_URL = (
     "https://storage.googleapis.com/mediapipe-models/pose_landmarker/"
     "pose_landmarker_lite/float16/1/pose_landmarker_lite.task"
 )
 MODEL_PATH = "pose_landmarker_lite.task"
 
-# --------------------------------------------------------------------------
-# The 33 landmarks MediaPipe returns. You only care about a handful of them.
-# Full list: 0 nose, 1-10 face, 11/12 shoulders, 13/14 elbows, 15/16 wrists,
-# 17-22 hands, 23/24 hips, 25/26 knees, 27/28 ankles, 29-32 feet.
-# --------------------------------------------------------------------------
 NOSE = 0
 L_SHOULDER, R_SHOULDER = 11, 12
 L_ELBOW, R_ELBOW = 13, 14
@@ -60,7 +34,7 @@ NAMED = {
     L_KNEE: "l_knee", R_KNEE: "r_knee",
 }
 
-# Skeleton edges to draw. Upper body only - that's all that's usually in frame.
+# Skeleton edges to draw. Upper body only 
 CONNECTIONS = [
     (L_SHOULDER, R_SHOULDER),
     (L_SHOULDER, L_ELBOW), (L_ELBOW, L_WRIST),
@@ -96,17 +70,7 @@ def ensure_model():
 
 
 def make_landmarker(model_path=None):
-    """
-    RunningMode.VIDEO is the right choice for a webcam loop: it keeps tracking
-    state between frames, so after the first detection it only has to track,
-    not re-detect. That is a large speedup over IMAGE mode.
-
-    LIVE_STREAM mode exists too and is async (callback-based). It hides latency
-    but makes the code harder to reason about - use VIDEO while learning.
-
-    model_path defaults to ensure_model(), so callers that don't care where the
-    .task file lives can just say make_landmarker().
-    """
+    
     if model_path is None:
         model_path = ensure_model()
 
@@ -191,9 +155,6 @@ def main():
         ok, frame = cap.read()
         if not ok:
             break
-        # Mirror the frame so the view is selfie-like. IMPORTANT: this means
-        # when you move to YOUR left, x DECREASES. Everything downstream
-        # assumes this. If you remove the flip, flip your left/right logic too.
         frame = cv2.flip(frame, 1)
         t_capture = (time.perf_counter() - t0) * 1000
 
@@ -215,9 +176,7 @@ def main():
                 dump_landmarks(lms)
                 dump_next = False
 
-            # Torso scale: your normalization denominator later. Watch this
-            # number - it should stay roughly constant while you sit still,
-            # and change only when you move toward/away from the camera.
+        
             sx = (lms[L_SHOULDER].x + lms[R_SHOULDER].x) / 2
             sy = (lms[L_SHOULDER].y + lms[R_SHOULDER].y) / 2
             hx = (lms[L_HIP].x + lms[R_HIP].x) / 2
