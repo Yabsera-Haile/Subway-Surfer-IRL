@@ -1,0 +1,6789 @@
+{
+ "session": "s01",
+ "params": {
+  "L_HIP": 23,
+  "R_HIP": 24,
+  "L_SHOULDER": 11,
+  "R_SHOULDER": 12,
+  "HZ": 30,
+  "WINDOW_S": 1.0,
+  "WINDOW_N": 30,
+  "PRE_S": 0.2,
+  "SHIFTS_S": [
+   -0.2,
+   -0.1,
+   0.0,
+   0.1,
+   0.2
+  ],
+  "REST_SKIP_S": 0.3,
+  "REST_STRIDE_S": 0.5,
+  "DISTRACTOR_STRIDE_S": 0.25,
+  "RECOVERY_STRIDE_S": 0.5,
+  "ONSET_RISE": 0.1,
+  "ONSET_FLOOR": 0.04,
+  "MIN_TRAVEL": 0.2,
+  "READY_LIMIT": 0.1,
+  "MAX_HOLE_S": 0.15,
+  "MAX_INTERP_S": 0.1,
+  "REST_QUIET": 0.15
+ },
+ "summary": {
+  "windows": {
+   "DUCK/gesture": 95,
+   "IDLE/distractor": 105,
+   "IDLE/recovery": 76,
+   "IDLE/rest": 301,
+   "JUMP/gesture": 100,
+   "LEFT/gesture": 100,
+   "RIGHT/gesture": 95
+  },
+  "reps_kept": 78,
+  "reps_dropped": 2,
+  "restless_rest_windows": 10
+ },
+ "reps": [
+  {
+   "cue": 3,
+   "label": "LEFT",
+   "status": "ok",
+   "onset": 0.947,
+   "travel": 0.652,
+   "windows": 5
+  },
+  {
+   "cue": 5,
+   "label": "DUCK",
+   "status": "ok",
+   "onset": 0.724,
+   "travel": 0.892,
+   "windows": 5
+  },
+  {
+   "cue": 7,
+   "label": "RIGHT",
+   "status": "ok",
+   "onset": 0.912,
+   "travel": 0.618,
+   "windows": 5
+  },
+  {
+   "cue": 9,
+   "label": "LEFT",
+   "status": "ok",
+   "onset": 0.87,
+   "travel": 0.542,
+   "windows": 5
+  },
+  {
+   "cue": 11,
+   "label": "RIGHT",
+   "status": "ok",
+   "onset": 0.886,
+   "travel": 0.643,
+   "windows": 5
+  },
+  {
+   "cue": 13,
+   "label": "LEFT",
+   "status": "ok",
+   "onset": 0.899,
+   "travel": 0.586,
+   "windows": 5
+  },
+  {
+   "cue": 15,
+   "label": "JUMP",
+   "status": "ok",
+   "onset": 0.898,
+   "travel": 0.556,
+   "windows": 5
+  },
+  {
+   "cue": 17,
+   "label": "JUMP",
+   "status": "ok",
+   "onset": 0.923,
+   "travel": 0.499,
+   "windows": 5
+  },
+  {
+   "cue": 19,
+   "label": "DUCK",
+   "status": "ok",
+   "onset": 0.81,
+   "travel": 1.034,
+   "windows": 5
+  },
+  {
+   "cue": 21,
+   "label": "RIGHT",
+   "status": "ok",
+   "onset": 0.825,
+   "travel": 0.604,
+   "windows": 5
+  },
+  {
+   "cue": 23,
+   "label": "DUCK",
+   "status": "ok",
+   "onset": 0.749,
+   "travel": 0.969,
+   "windows": 5
+  },
+  {
+   "cue": 25,
+   "label": "RIGHT",
+   "status": "ok",
+   "onset": 0.783,
+   "travel": 0.616,
+   "windows": 5
+  },
+  {
+   "cue": 27,
+   "label": "LEFT",
+   "status": "ok",
+   "onset": 0.731,
+   "travel": 0.76,
+   "windows": 5
+  },
+  {
+   "cue": 29,
+   "label": "JUMP",
+   "status": "ok",
+   "onset": 0.875,
+   "travel": 0.538,
+   "windows": 5
+  },
+  {
+   "cue": 31,
+   "label": "RIGHT",
+   "status": "ok",
+   "onset": 0.873,
+   "travel": 0.586,
+   "windows": 5
+  },
+  {
+   "cue": 33,
+   "label": "LEFT",
+   "status": "ok",
+   "onset": 0.799,
+   "travel": 0.58,
+   "windows": 5
+  },
+  {
+   "cue": 35,
+   "label": "DUCK",
+   "status": "ok",
+   "onset": 0.796,
+   "travel": 1.023,
+   "windows": 5
+  },
+  {
+   "cue": 39,
+   "label": "JUMP",
+   "status": "ok",
+   "onset": 0.84,
+   "travel": 0.468,
+   "windows": 5
+  },
+  {
+   "cue": 41,
+   "label": "JUMP",
+   "status": "ok",
+   "onset": 0.858,
+   "travel": 0.471,
+   "windows": 5
+  },
+  {
+   "cue": 45,
+   "label": "LEFT",
+   "status": "ok",
+   "onset": 0.841,
+   "travel": 0.584,
+   "windows": 5
+  },
+  {
+   "cue": 47,
+   "label": "DUCK",
+   "status": "ok",
+   "onset": 0.892,
+   "travel": 1.001,
+   "windows": 5
+  },
+  {
+   "cue": 49,
+   "label": "JUMP",
+   "status": "ok",
+   "onset": 0.748,
+   "travel": 0.436,
+   "windows": 5
+  },
+  {
+   "cue": 51,
+   "label": "DUCK",
+   "status": "dropped",
+   "reason": "935 ms gap during the rep"
+  },
+  {
+   "cue": 53,
+   "label": "JUMP",
+   "status": "ok",
+   "onset": 0.738,
+   "travel": 0.397,
+   "windows": 5
+  },
+  {
+   "cue": 55,
+   "label": "RIGHT",
+   "status": "ok",
+   "onset": 0.901,
+   "travel": 0.636,
+   "windows": 5
+  },
+  {
+   "cue": 59,
+   "label": "DUCK",
+   "status": "ok",
+   "onset": 0.768,
+   "travel": 0.975,
+   "windows": 5
+  },
+  {
+   "cue": 61,
+   "label": "DUCK",
+   "status": "ok",
+   "onset": 0.836,
+   "travel": 0.93,
+   "windows": 5
+  },
+  {
+   "cue": 63,
+   "label": "JUMP",
+   "status": "ok",
+   "onset": 0.94,
+   "travel": 0.463,
+   "windows": 5
+  },
+  {
+   "cue": 65,
+   "label": "JUMP",
+   "status": "ok",
+   "onset": 0.917,
+   "travel": 0.484,
+   "windows": 5
+  },
+  {
+   "cue": 67,
+   "label": "RIGHT",
+   "status": "ok",
+   "onset": 0.764,
+   "travel": 0.618,
+   "windows": 5
+  },
+  {
+   "cue": 71,
+   "label": "JUMP",
+   "status": "ok",
+   "onset": 0.86,
+   "travel": 0.389,
+   "windows": 5
+  },
+  {
+   "cue": 73,
+   "label": "DUCK",
+   "status": "ok",
+   "onset": 0.726,
+   "travel": 0.972,
+   "windows": 5
+  },
+  {
+   "cue": 75,
+   "label": "JUMP",
+   "status": "ok",
+   "onset": 0.917,
+   "travel": 0.441,
+   "windows": 5
+  },
+  {
+   "cue": 77,
+   "label": "LEFT",
+   "status": "ok",
+   "onset": 0.829,
+   "travel": 0.672,
+   "windows": 5
+  },
+  {
+   "cue": 79,
+   "label": "DUCK",
+   "status": "ok",
+   "onset": 0.941,
+   "travel": 0.953,
+   "windows": 5
+  },
+  {
+   "cue": 81,
+   "label": "DUCK",
+   "status": "ok",
+   "onset": 0.678,
+   "travel": 0.954,
+   "windows": 5
+  },
+  {
+   "cue": 83,
+   "label": "RIGHT",
+   "status": "ok",
+   "onset": 0.768,
+   "travel": 0.656,
+   "windows": 5
+  },
+  {
+   "cue": 85,
+   "label": "LEFT",
+   "status": "ok",
+   "onset": 0.874,
+   "travel": 0.723,
+   "windows": 5
+  },
+  {
+   "cue": 89,
+   "label": "DUCK",
+   "status": "ok",
+   "onset": 0.73,
+   "travel": 0.995,
+   "windows": 5
+  },
+  {
+   "cue": 91,
+   "label": "RIGHT",
+   "status": "ok",
+   "onset": 0.847,
+   "travel": 0.725,
+   "windows": 5
+  },
+  {
+   "cue": 93,
+   "label": "LEFT",
+   "status": "ok",
+   "onset": 0.848,
+   "travel": 0.728,
+   "windows": 5
+  },
+  {
+   "cue": 97,
+   "label": "LEFT",
+   "status": "ok",
+   "onset": 0.939,
+   "travel": 0.646,
+   "windows": 5
+  },
+  {
+   "cue": 99,
+   "label": "RIGHT",
+   "status": "ok",
+   "onset": 0.91,
+   "travel": 0.73,
+   "windows": 5
+  },
+  {
+   "cue": 101,
+   "label": "RIGHT",
+   "status": "ok",
+   "onset": 0.737,
+   "travel": 0.804,
+   "windows": 5
+  },
+  {
+   "cue": 103,
+   "label": "LEFT",
+   "status": "ok",
+   "onset": 0.834,
+   "travel": 0.935,
+   "windows": 5
+  },
+  {
+   "cue": 105,
+   "label": "JUMP",
+   "status": "ok",
+   "onset": 0.812,
+   "travel": 0.469,
+   "windows": 5
+  },
+  {
+   "cue": 107,
+   "label": "JUMP",
+   "status": "ok",
+   "onset": 1.113,
+   "travel": 0.44,
+   "windows": 5
+  },
+  {
+   "cue": 109,
+   "label": "RIGHT",
+   "status": "dropped",
+   "reason": "moved during the countdown"
+  },
+  {
+   "cue": 111,
+   "label": "JUMP",
+   "status": "ok",
+   "onset": 0.925,
+   "travel": 0.448,
+   "windows": 5
+  },
+  {
+   "cue": 113,
+   "label": "JUMP",
+   "status": "ok",
+   "onset": 0.866,
+   "travel": 0.341,
+   "windows": 5
+  },
+  {
+   "cue": 115,
+   "label": "LEFT",
+   "status": "ok",
+   "onset": 0.884,
+   "travel": 0.799,
+   "windows": 5
+  },
+  {
+   "cue": 117,
+   "label": "DUCK",
+   "status": "ok",
+   "onset": 0.737,
+   "travel": 0.951,
+   "windows": 5
+  },
+  {
+   "cue": 119,
+   "label": "JUMP",
+   "status": "ok",
+   "onset": 0.877,
+   "travel": 0.459,
+   "windows": 5
+  },
+  {
+   "cue": 121,
+   "label": "JUMP",
+   "status": "ok",
+   "onset": 0.854,
+   "travel": 0.464,
+   "windows": 5
+  },
+  {
+   "cue": 125,
+   "label": "RIGHT",
+   "status": "ok",
+   "onset": 0.818,
+   "travel": 0.766,
+   "windows": 5
+  },
+  {
+   "cue": 127,
+   "label": "LEFT",
+   "status": "ok",
+   "onset": 0.841,
+   "travel": 0.934,
+   "windows": 5
+  },
+  {
+   "cue": 129,
+   "label": "RIGHT",
+   "status": "ok",
+   "onset": 0.629,
+   "travel": 0.68,
+   "windows": 5
+  },
+  {
+   "cue": 131,
+   "label": "JUMP",
+   "status": "ok",
+   "onset": 0.948,
+   "travel": 0.468,
+   "windows": 5
+  },
+  {
+   "cue": 133,
+   "label": "LEFT",
+   "status": "ok",
+   "onset": 0.819,
+   "travel": 0.759,
+   "windows": 5
+  },
+  {
+   "cue": 135,
+   "label": "LEFT",
+   "status": "ok",
+   "onset": 0.978,
+   "travel": 0.793,
+   "windows": 5
+  },
+  {
+   "cue": 137,
+   "label": "RIGHT",
+   "status": "ok",
+   "onset": 0.824,
+   "travel": 0.814,
+   "windows": 5
+  },
+  {
+   "cue": 139,
+   "label": "DUCK",
+   "status": "ok",
+   "onset": 0.776,
+   "travel": 0.834,
+   "windows": 5
+  },
+  {
+   "cue": 141,
+   "label": "LEFT",
+   "status": "ok",
+   "onset": 0.834,
+   "travel": 0.723,
+   "windows": 5
+  },
+  {
+   "cue": 143,
+   "label": "RIGHT",
+   "status": "ok",
+   "onset": 0.839,
+   "travel": 0.743,
+   "windows": 5
+  },
+  {
+   "cue": 147,
+   "label": "JUMP",
+   "status": "ok",
+   "onset": 0.855,
+   "travel": 0.428,
+   "windows": 5
+  },
+  {
+   "cue": 149,
+   "label": "LEFT",
+   "status": "ok",
+   "onset": 1.075,
+   "travel": 0.688,
+   "windows": 5
+  },
+  {
+   "cue": 153,
+   "label": "RIGHT",
+   "status": "ok",
+   "onset": 0.948,
+   "travel": 0.819,
+   "windows": 5
+  },
+  {
+   "cue": 155,
+   "label": "LEFT",
+   "status": "ok",
+   "onset": 0.776,
+   "travel": 0.76,
+   "windows": 5
+  },
+  {
+   "cue": 157,
+   "label": "JUMP",
+   "status": "ok",
+   "onset": 0.891,
+   "travel": 0.517,
+   "windows": 5
+  },
+  {
+   "cue": 161,
+   "label": "RIGHT",
+   "status": "ok",
+   "onset": 0.741,
+   "travel": 0.776,
+   "windows": 5
+  },
+  {
+   "cue": 165,
+   "label": "RIGHT",
+   "status": "ok",
+   "onset": 0.943,
+   "travel": 0.742,
+   "windows": 5
+  },
+  {
+   "cue": 169,
+   "label": "DUCK",
+   "status": "ok",
+   "onset": 0.76,
+   "travel": 0.871,
+   "windows": 5
+  },
+  {
+   "cue": 171,
+   "label": "DUCK",
+   "status": "ok",
+   "onset": 0.852,
+   "travel": 0.919,
+   "windows": 5
+  },
+  {
+   "cue": 173,
+   "label": "LEFT",
+   "status": "ok",
+   "onset": 0.874,
+   "travel": 0.707,
+   "windows": 5
+  },
+  {
+   "cue": 177,
+   "label": "DUCK",
+   "status": "ok",
+   "onset": 0.827,
+   "travel": 0.911,
+   "windows": 5
+  },
+  {
+   "cue": 179,
+   "label": "RIGHT",
+   "status": "ok",
+   "onset": 0.81,
+   "travel": 0.814,
+   "windows": 5
+  },
+  {
+   "cue": 183,
+   "label": "DUCK",
+   "status": "ok",
+   "onset": 0.778,
+   "travel": 0.872,
+   "windows": 5
+  },
+  {
+   "cue": 185,
+   "label": "LEFT",
+   "status": "ok",
+   "onset": 0.816,
+   "travel": 0.804,
+   "windows": 5
+  },
+  {
+   "cue": 187,
+   "label": "DUCK",
+   "status": "ok",
+   "onset": 0.774,
+   "travel": 0.937,
+   "windows": 5
+  },
+  {
+   "cue": 189,
+   "label": "DUCK",
+   "status": "ok",
+   "onset": 0.77,
+   "travel": 0.968,
+   "windows": 5
+  }
+ ],
+ "windows": [
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 16.8,
+   "cue": 0,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 17.8,
+   "cue": 0,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 20.4,
+   "cue": 1,
+   "detail": "check your watch"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 20.6667,
+   "cue": 1,
+   "detail": "check your watch"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 20.9,
+   "cue": 1,
+   "detail": "check your watch"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 21.1667,
+   "cue": 1,
+   "detail": "check your watch"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 21.4,
+   "cue": 1,
+   "detail": "check your watch"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 21.6667,
+   "cue": 1,
+   "detail": "check your watch"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 21.9,
+   "cue": 1,
+   "detail": "check your watch"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 23.4333,
+   "cue": 2,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 23.9333,
+   "cue": 2,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 24.4333,
+   "cue": 2,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 24.9333,
+   "cue": 2,
+   "lane": 1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 27.6333,
+   "cue": 3,
+   "shift": -0.2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 27.7333,
+   "cue": 3,
+   "shift": -0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 27.8333,
+   "cue": 3,
+   "shift": 0.0
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 27.9333,
+   "cue": 3,
+   "shift": 0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 28.0333,
+   "cue": 3,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 29.0333,
+   "cue": 3,
+   "after": "LEFT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 30.4,
+   "cue": 4,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 30.9,
+   "cue": 4,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 31.4,
+   "cue": 4,
+   "lane": 0
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 34.1333,
+   "cue": 5,
+   "shift": -0.2
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 34.2333,
+   "cue": 5,
+   "shift": -0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 34.3333,
+   "cue": 5,
+   "shift": 0.0
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 34.4333,
+   "cue": 5,
+   "shift": 0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 34.5333,
+   "cue": 5,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 35.5333,
+   "cue": 5,
+   "after": "DUCK"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 37.1333,
+   "cue": 6,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 37.6333,
+   "cue": 6,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 38.1333,
+   "cue": 6,
+   "lane": 0
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 41.0667,
+   "cue": 7,
+   "shift": -0.2
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 41.1667,
+   "cue": 7,
+   "shift": -0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 41.2667,
+   "cue": 7,
+   "shift": 0.0
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 41.3667,
+   "cue": 7,
+   "shift": 0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 41.4667,
+   "cue": 7,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 42.4667,
+   "cue": 7,
+   "after": "RIGHT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 43.8667,
+   "cue": 8,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 44.3667,
+   "cue": 8,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 44.8667,
+   "cue": 8,
+   "lane": 1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 47.8,
+   "cue": 9,
+   "shift": -0.2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 47.9,
+   "cue": 9,
+   "shift": -0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 48.0,
+   "cue": 9,
+   "shift": 0.0
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 48.1,
+   "cue": 9,
+   "shift": 0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 48.2,
+   "cue": 9,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 49.2,
+   "cue": 9,
+   "after": "LEFT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 50.6667,
+   "cue": 10,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 51.1667,
+   "cue": 10,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 51.6667,
+   "cue": 10,
+   "lane": 0
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 54.2333,
+   "cue": 11,
+   "shift": -0.2
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 54.3333,
+   "cue": 11,
+   "shift": -0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 54.4333,
+   "cue": 11,
+   "shift": 0.0
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 54.5333,
+   "cue": 11,
+   "shift": 0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 54.6333,
+   "cue": 11,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 55.6333,
+   "cue": 11,
+   "after": "RIGHT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 57.0667,
+   "cue": 12,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 57.5667,
+   "cue": 12,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 58.0667,
+   "cue": 12,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 58.5667,
+   "cue": 12,
+   "lane": 1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 61.2333,
+   "cue": 13,
+   "shift": -0.2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 61.3333,
+   "cue": 13,
+   "shift": -0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 61.4333,
+   "cue": 13,
+   "shift": 0.0
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 61.5333,
+   "cue": 13,
+   "shift": 0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 61.6333,
+   "cue": 13,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 62.6333,
+   "cue": 13,
+   "after": "LEFT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 64.0667,
+   "cue": 14,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 64.5667,
+   "cue": 14,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 65.0667,
+   "cue": 14,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 65.5667,
+   "cue": 14,
+   "lane": 0
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 68.3,
+   "cue": 15,
+   "shift": -0.2
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 68.4,
+   "cue": 15,
+   "shift": -0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 68.5,
+   "cue": 15,
+   "shift": 0.0
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 68.6,
+   "cue": 15,
+   "shift": 0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 68.7,
+   "cue": 15,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 69.7,
+   "cue": 15,
+   "after": "JUMP"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 71.1,
+   "cue": 16,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 71.6,
+   "cue": 16,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 72.1,
+   "cue": 16,
+   "lane": 0
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 75.0667,
+   "cue": 17,
+   "shift": -0.2
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 75.1667,
+   "cue": 17,
+   "shift": -0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 75.2667,
+   "cue": 17,
+   "shift": 0.0
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 75.3667,
+   "cue": 17,
+   "shift": 0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 75.4667,
+   "cue": 17,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 76.4667,
+   "cue": 17,
+   "after": "JUMP"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 77.8333,
+   "cue": 18,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 78.3333,
+   "cue": 18,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 78.8333,
+   "cue": 18,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 79.3333,
+   "cue": 18,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 79.8333,
+   "cue": 18,
+   "lane": 0
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 82.3667,
+   "cue": 19,
+   "shift": -0.2
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 82.4667,
+   "cue": 19,
+   "shift": -0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 82.5667,
+   "cue": 19,
+   "shift": 0.0
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 82.6667,
+   "cue": 19,
+   "shift": 0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 82.7667,
+   "cue": 19,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 83.7667,
+   "cue": 19,
+   "after": "DUCK"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 85.2667,
+   "cue": 20,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 85.7667,
+   "cue": 20,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 86.2667,
+   "cue": 20,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 86.7667,
+   "cue": 20,
+   "lane": 0
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 89.4,
+   "cue": 21,
+   "shift": -0.2
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 89.5,
+   "cue": 21,
+   "shift": -0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 89.6,
+   "cue": 21,
+   "shift": 0.0
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 89.7,
+   "cue": 21,
+   "shift": 0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 89.8,
+   "cue": 21,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 90.8,
+   "cue": 21,
+   "after": "RIGHT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 92.2667,
+   "cue": 22,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 92.7667,
+   "cue": 22,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 93.2667,
+   "cue": 22,
+   "lane": 1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 95.9667,
+   "cue": 23,
+   "shift": -0.2
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 96.0667,
+   "cue": 23,
+   "shift": -0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 96.1667,
+   "cue": 23,
+   "shift": 0.0
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 96.2667,
+   "cue": 23,
+   "shift": 0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 96.3667,
+   "cue": 23,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 97.3667,
+   "cue": 23,
+   "after": "DUCK"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 98.9333,
+   "cue": 24,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 99.4333,
+   "cue": 24,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 99.9333,
+   "cue": 24,
+   "lane": 1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 102.8333,
+   "cue": 25,
+   "shift": -0.2
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 102.9333,
+   "cue": 25,
+   "shift": -0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 103.0333,
+   "cue": 25,
+   "shift": 0.0
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 103.1333,
+   "cue": 25,
+   "shift": 0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 103.2333,
+   "cue": 25,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 104.2333,
+   "cue": 25,
+   "after": "RIGHT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 105.7667,
+   "cue": 26,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 106.2667,
+   "cue": 26,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 106.7667,
+   "cue": 26,
+   "lane": 2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 109.6333,
+   "cue": 27,
+   "shift": -0.2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 109.7333,
+   "cue": 27,
+   "shift": -0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 109.8333,
+   "cue": 27,
+   "shift": 0.0
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 109.9333,
+   "cue": 27,
+   "shift": 0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 110.0333,
+   "cue": 27,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 111.0333,
+   "cue": 27,
+   "after": "LEFT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 112.6,
+   "cue": 28,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 113.1,
+   "cue": 28,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 113.6,
+   "cue": 28,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 114.1,
+   "cue": 28,
+   "lane": 1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 116.8667,
+   "cue": 29,
+   "shift": -0.2
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 116.9667,
+   "cue": 29,
+   "shift": -0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 117.0667,
+   "cue": 29,
+   "shift": 0.0
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 117.1667,
+   "cue": 29,
+   "shift": 0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 117.2667,
+   "cue": 29,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 118.2667,
+   "cue": 29,
+   "after": "JUMP"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 119.7,
+   "cue": 30,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 120.2,
+   "cue": 30,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 120.7,
+   "cue": 30,
+   "lane": 1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 123.4,
+   "cue": 31,
+   "shift": -0.2
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 123.5,
+   "cue": 31,
+   "shift": -0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 123.6,
+   "cue": 31,
+   "shift": 0.0
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 123.7,
+   "cue": 31,
+   "shift": 0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 123.8,
+   "cue": 31,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 124.8,
+   "cue": 31,
+   "after": "RIGHT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 126.2333,
+   "cue": 32,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 126.7333,
+   "cue": 32,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 127.2333,
+   "cue": 32,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 127.7333,
+   "cue": 32,
+   "lane": 2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 130.3333,
+   "cue": 33,
+   "shift": -0.2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 130.4333,
+   "cue": 33,
+   "shift": -0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 130.5333,
+   "cue": 33,
+   "shift": 0.0
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 130.6333,
+   "cue": 33,
+   "shift": 0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 130.7333,
+   "cue": 33,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 131.7333,
+   "cue": 33,
+   "after": "LEFT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 133.2333,
+   "cue": 34,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 133.7333,
+   "cue": 34,
+   "lane": 1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 136.5,
+   "cue": 35,
+   "shift": -0.2
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 136.6,
+   "cue": 35,
+   "shift": -0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 136.7,
+   "cue": 35,
+   "shift": 0.0
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 136.8,
+   "cue": 35,
+   "shift": 0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 136.9,
+   "cue": 35,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 137.9,
+   "cue": 35,
+   "after": "DUCK"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 139.4,
+   "cue": 36,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 139.9,
+   "cue": 36,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 140.4,
+   "cue": 36,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 142.8667,
+   "cue": 37,
+   "detail": "rub your eyes"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 143.1,
+   "cue": 37,
+   "detail": "rub your eyes"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 143.3667,
+   "cue": 37,
+   "detail": "rub your eyes"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 143.6,
+   "cue": 37,
+   "detail": "rub your eyes"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 143.8667,
+   "cue": 37,
+   "detail": "rub your eyes"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 144.1,
+   "cue": 37,
+   "detail": "rub your eyes"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 144.3667,
+   "cue": 37,
+   "detail": "rub your eyes"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 145.8667,
+   "cue": 38,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 146.3667,
+   "cue": 38,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 146.8667,
+   "cue": 38,
+   "lane": 1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 149.4667,
+   "cue": 39,
+   "shift": -0.2
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 149.5667,
+   "cue": 39,
+   "shift": -0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 149.6667,
+   "cue": 39,
+   "shift": 0.0
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 149.7667,
+   "cue": 39,
+   "shift": 0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 149.8667,
+   "cue": 39,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 150.8667,
+   "cue": 39,
+   "after": "JUMP"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 152.3333,
+   "cue": 40,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 152.8333,
+   "cue": 40,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 153.3333,
+   "cue": 40,
+   "lane": 1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 156.0,
+   "cue": 41,
+   "shift": -0.2
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 156.1,
+   "cue": 41,
+   "shift": -0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 156.2,
+   "cue": 41,
+   "shift": 0.0
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 156.3,
+   "cue": 41,
+   "shift": 0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 156.4,
+   "cue": 41,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 157.4,
+   "cue": 41,
+   "after": "JUMP"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 158.8667,
+   "cue": 42,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 159.3667,
+   "cue": 42,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 159.8667,
+   "cue": 42,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 162.5667,
+   "cue": 43,
+   "detail": "adjust your shirt"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 162.8333,
+   "cue": 43,
+   "detail": "adjust your shirt"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 163.0667,
+   "cue": 43,
+   "detail": "adjust your shirt"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 163.3333,
+   "cue": 43,
+   "detail": "adjust your shirt"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 163.5667,
+   "cue": 43,
+   "detail": "adjust your shirt"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 163.8333,
+   "cue": 43,
+   "detail": "adjust your shirt"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 164.0667,
+   "cue": 43,
+   "detail": "adjust your shirt"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 165.6,
+   "cue": 44,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 166.1,
+   "cue": 44,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 166.6,
+   "cue": 44,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 167.1,
+   "cue": 44,
+   "lane": 1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 169.8,
+   "cue": 45,
+   "shift": -0.2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 169.9,
+   "cue": 45,
+   "shift": -0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 170.0,
+   "cue": 45,
+   "shift": 0.0
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 170.1,
+   "cue": 45,
+   "shift": 0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 170.2,
+   "cue": 45,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 171.2,
+   "cue": 45,
+   "after": "LEFT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 172.6667,
+   "cue": 46,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 173.1667,
+   "cue": 46,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 173.6667,
+   "cue": 46,
+   "lane": 0
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 176.3333,
+   "cue": 47,
+   "shift": -0.2
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 176.4333,
+   "cue": 47,
+   "shift": -0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 176.5333,
+   "cue": 47,
+   "shift": 0.0
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 176.6333,
+   "cue": 47,
+   "shift": 0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 176.7333,
+   "cue": 47,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 177.7333,
+   "cue": 47,
+   "after": "DUCK"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 179.1333,
+   "cue": 48,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 179.6333,
+   "cue": 48,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 180.1333,
+   "cue": 48,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 180.6333,
+   "cue": 48,
+   "lane": 0
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 183.4333,
+   "cue": 49,
+   "shift": -0.2
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 183.5333,
+   "cue": 49,
+   "shift": -0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 183.6333,
+   "cue": 49,
+   "shift": 0.0
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 183.7333,
+   "cue": 49,
+   "shift": 0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 183.8333,
+   "cue": 49,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 184.8333,
+   "cue": 49,
+   "after": "JUMP"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 186.4,
+   "cue": 50,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 186.9,
+   "cue": 50,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 187.4,
+   "cue": 50,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 187.9,
+   "cue": 50,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 188.4,
+   "cue": 50,
+   "lane": 0
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 198.3333,
+   "cue": 53,
+   "shift": -0.2
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 198.4333,
+   "cue": 53,
+   "shift": -0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 198.5333,
+   "cue": 53,
+   "shift": 0.0
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 198.6333,
+   "cue": 53,
+   "shift": 0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 198.7333,
+   "cue": 53,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 199.7333,
+   "cue": 53,
+   "after": "JUMP"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 201.3,
+   "cue": 54,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 201.8,
+   "cue": 54,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 202.3,
+   "cue": 54,
+   "lane": 0
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 205.1,
+   "cue": 55,
+   "shift": -0.2
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 205.2,
+   "cue": 55,
+   "shift": -0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 205.3,
+   "cue": 55,
+   "shift": 0.0
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 205.4,
+   "cue": 55,
+   "shift": 0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 205.5,
+   "cue": 55,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 206.5,
+   "cue": 55,
+   "after": "RIGHT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 207.9333,
+   "cue": 56,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 208.4333,
+   "cue": 56,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 208.9333,
+   "cue": 56,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 211.7333,
+   "cue": 57,
+   "detail": "wave at the camera"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 211.9667,
+   "cue": 57,
+   "detail": "wave at the camera"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 212.2333,
+   "cue": 57,
+   "detail": "wave at the camera"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 212.4667,
+   "cue": 57,
+   "detail": "wave at the camera"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 212.7333,
+   "cue": 57,
+   "detail": "wave at the camera"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 212.9667,
+   "cue": 57,
+   "detail": "wave at the camera"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 213.2333,
+   "cue": 57,
+   "detail": "wave at the camera"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 215.7333,
+   "cue": 58,
+   "lane": 1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 218.5333,
+   "cue": 59,
+   "shift": -0.2
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 218.6333,
+   "cue": 59,
+   "shift": -0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 218.7333,
+   "cue": 59,
+   "shift": 0.0
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 218.8333,
+   "cue": 59,
+   "shift": 0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 218.9333,
+   "cue": 59,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 219.9333,
+   "cue": 59,
+   "after": "DUCK"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 221.4667,
+   "cue": 60,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 221.9667,
+   "cue": 60,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 222.4667,
+   "cue": 60,
+   "lane": 1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 225.3,
+   "cue": 61,
+   "shift": -0.2
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 225.4,
+   "cue": 61,
+   "shift": -0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 225.5,
+   "cue": 61,
+   "shift": 0.0
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 225.6,
+   "cue": 61,
+   "shift": 0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 225.7,
+   "cue": 61,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 226.7,
+   "cue": 61,
+   "after": "DUCK"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 228.2,
+   "cue": 62,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 228.7,
+   "cue": 62,
+   "lane": 1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 231.7,
+   "cue": 63,
+   "shift": -0.2
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 231.8,
+   "cue": 63,
+   "shift": -0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 231.9,
+   "cue": 63,
+   "shift": 0.0
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 232.0,
+   "cue": 63,
+   "shift": 0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 232.1,
+   "cue": 63,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 233.1,
+   "cue": 63,
+   "after": "JUMP"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 234.4667,
+   "cue": 64,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 234.9667,
+   "cue": 64,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 235.4667,
+   "cue": 64,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 235.9667,
+   "cue": 64,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 236.4667,
+   "cue": 64,
+   "lane": 1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 239.2333,
+   "cue": 65,
+   "shift": -0.2
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 239.3333,
+   "cue": 65,
+   "shift": -0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 239.4333,
+   "cue": 65,
+   "shift": 0.0
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 239.5333,
+   "cue": 65,
+   "shift": 0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 239.6333,
+   "cue": 65,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 240.6333,
+   "cue": 65,
+   "after": "JUMP"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 242.0333,
+   "cue": 66,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 242.5333,
+   "cue": 66,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 243.0333,
+   "cue": 66,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 243.5333,
+   "cue": 66,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 244.0333,
+   "cue": 66,
+   "lane": 1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 246.5333,
+   "cue": 67,
+   "shift": -0.2
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 246.6333,
+   "cue": 67,
+   "shift": -0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 246.7333,
+   "cue": 67,
+   "shift": 0.0
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 246.8333,
+   "cue": 67,
+   "shift": 0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 246.9333,
+   "cue": 67,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 247.9333,
+   "cue": 67,
+   "after": "RIGHT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 249.4667,
+   "cue": 68,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 249.9667,
+   "cue": 68,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 250.4667,
+   "cue": 68,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 253.1333,
+   "cue": 69,
+   "detail": "reach to the side for a cup"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 253.4,
+   "cue": 69,
+   "detail": "reach to the side for a cup"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 253.6333,
+   "cue": 69,
+   "detail": "reach to the side for a cup"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 253.9,
+   "cue": 69,
+   "detail": "reach to the side for a cup"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 254.1333,
+   "cue": 69,
+   "detail": "reach to the side for a cup"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 254.4,
+   "cue": 69,
+   "detail": "reach to the side for a cup"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 254.6333,
+   "cue": 69,
+   "detail": "reach to the side for a cup"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 256.1667,
+   "cue": 70,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 256.6667,
+   "cue": 70,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 257.1667,
+   "cue": 70,
+   "lane": 2
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 259.7667,
+   "cue": 71,
+   "shift": -0.2
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 259.8667,
+   "cue": 71,
+   "shift": -0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 259.9667,
+   "cue": 71,
+   "shift": 0.0
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 260.0667,
+   "cue": 71,
+   "shift": 0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 260.1667,
+   "cue": 71,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 261.1667,
+   "cue": 71,
+   "after": "JUMP"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 262.6333,
+   "cue": 72,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 263.1333,
+   "cue": 72,
+   "lane": 2
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 265.8333,
+   "cue": 73,
+   "shift": -0.2
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 265.9333,
+   "cue": 73,
+   "shift": -0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 266.0333,
+   "cue": 73,
+   "shift": 0.0
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 266.1333,
+   "cue": 73,
+   "shift": 0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 266.2333,
+   "cue": 73,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 267.2333,
+   "cue": 73,
+   "after": "DUCK"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 268.8333,
+   "cue": 74,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 269.3333,
+   "cue": 74,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 269.8333,
+   "cue": 74,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 270.3333,
+   "cue": 74,
+   "lane": 2
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 273.0333,
+   "cue": 75,
+   "shift": -0.2
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 273.1333,
+   "cue": 75,
+   "shift": -0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 273.2333,
+   "cue": 75,
+   "shift": 0.0
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 273.3333,
+   "cue": 75,
+   "shift": 0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 273.4333,
+   "cue": 75,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 274.4333,
+   "cue": 75,
+   "after": "JUMP"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 275.8333,
+   "cue": 76,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 276.3333,
+   "cue": 76,
+   "lane": 2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 279.2333,
+   "cue": 77,
+   "shift": -0.2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 279.3333,
+   "cue": 77,
+   "shift": -0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 279.4333,
+   "cue": 77,
+   "shift": 0.0
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 279.5333,
+   "cue": 77,
+   "shift": 0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 279.6333,
+   "cue": 77,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 280.6333,
+   "cue": 77,
+   "after": "LEFT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 282.1,
+   "cue": 78,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 282.6,
+   "cue": 78,
+   "lane": 1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 285.4667,
+   "cue": 79,
+   "shift": -0.2
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 285.5667,
+   "cue": 79,
+   "shift": -0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 285.6667,
+   "cue": 79,
+   "shift": 0.0
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 285.7667,
+   "cue": 79,
+   "shift": 0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 285.8667,
+   "cue": 79,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 286.8667,
+   "cue": 79,
+   "after": "DUCK"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 288.2333,
+   "cue": 80,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 288.7333,
+   "cue": 80,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 289.2333,
+   "cue": 80,
+   "lane": 1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 291.5667,
+   "cue": 81,
+   "shift": -0.2
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 291.6667,
+   "cue": 81,
+   "shift": -0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 291.7667,
+   "cue": 81,
+   "shift": 0.0
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 291.8667,
+   "cue": 81,
+   "shift": 0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 291.9667,
+   "cue": 81,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 292.9667,
+   "cue": 81,
+   "after": "DUCK"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 294.6,
+   "cue": 82,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 295.1,
+   "cue": 82,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 295.6,
+   "cue": 82,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 296.1,
+   "cue": 82,
+   "lane": 1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 298.6333,
+   "cue": 83,
+   "shift": -0.2
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 298.7333,
+   "cue": 83,
+   "shift": -0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 298.8333,
+   "cue": 83,
+   "shift": 0.0
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 298.9333,
+   "cue": 83,
+   "shift": 0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 299.0333,
+   "cue": 83,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 300.0333,
+   "cue": 83,
+   "after": "RIGHT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 301.5667,
+   "cue": 84,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 302.0667,
+   "cue": 84,
+   "lane": 2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 305.1,
+   "cue": 85,
+   "shift": -0.2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 305.2,
+   "cue": 85,
+   "shift": -0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 305.3,
+   "cue": 85,
+   "shift": 0.0
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 305.4,
+   "cue": 85,
+   "shift": 0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 305.5,
+   "cue": 85,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 306.5,
+   "cue": 85,
+   "after": "LEFT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 307.9667,
+   "cue": 86,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 308.4667,
+   "cue": 86,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 308.9667,
+   "cue": 86,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 311.5,
+   "cue": 87,
+   "detail": "roll your shoulders"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 311.7667,
+   "cue": 87,
+   "detail": "roll your shoulders"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 312.0,
+   "cue": 87,
+   "detail": "roll your shoulders"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 312.2667,
+   "cue": 87,
+   "detail": "roll your shoulders"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 312.5,
+   "cue": 87,
+   "detail": "roll your shoulders"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 312.7667,
+   "cue": 87,
+   "detail": "roll your shoulders"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 313.0,
+   "cue": 87,
+   "detail": "roll your shoulders"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 314.5333,
+   "cue": 88,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 315.0333,
+   "cue": 88,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 315.5333,
+   "cue": 88,
+   "lane": 1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 318.1667,
+   "cue": 89,
+   "shift": -0.2
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 318.2667,
+   "cue": 89,
+   "shift": -0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 318.3667,
+   "cue": 89,
+   "shift": 0.0
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 318.4667,
+   "cue": 89,
+   "shift": 0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 318.5667,
+   "cue": 89,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 319.5667,
+   "cue": 89,
+   "after": "DUCK"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 321.1667,
+   "cue": 90,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 321.6667,
+   "cue": 90,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 322.1667,
+   "cue": 90,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 322.6667,
+   "cue": 90,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 323.1667,
+   "cue": 90,
+   "lane": 1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 325.8,
+   "cue": 91,
+   "shift": -0.2
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 325.9,
+   "cue": 91,
+   "shift": -0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 326.0,
+   "cue": 91,
+   "shift": 0.0
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 326.1,
+   "cue": 91,
+   "shift": 0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 326.2,
+   "cue": 91,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 327.2,
+   "cue": 91,
+   "after": "RIGHT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 328.6667,
+   "cue": 92,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 329.1667,
+   "cue": 92,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 329.6667,
+   "cue": 92,
+   "lane": 2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 332.5,
+   "cue": 93,
+   "shift": -0.2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 332.6,
+   "cue": 93,
+   "shift": -0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 332.7,
+   "cue": 93,
+   "shift": 0.0
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 332.8,
+   "cue": 93,
+   "shift": 0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 332.9,
+   "cue": 93,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 333.9,
+   "cue": 93,
+   "after": "LEFT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 335.3667,
+   "cue": 94,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 335.8667,
+   "cue": 94,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 336.3667,
+   "cue": 94,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 336.8667,
+   "cue": 94,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 339.3667,
+   "cue": 95,
+   "detail": "turn and talk to someone"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 339.6333,
+   "cue": 95,
+   "detail": "turn and talk to someone"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 339.8667,
+   "cue": 95,
+   "detail": "turn and talk to someone"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 340.1333,
+   "cue": 95,
+   "detail": "turn and talk to someone"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 340.3667,
+   "cue": 95,
+   "detail": "turn and talk to someone"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 340.6333,
+   "cue": 95,
+   "detail": "turn and talk to someone"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 340.8667,
+   "cue": 95,
+   "detail": "turn and talk to someone"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 342.3667,
+   "cue": 96,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 342.8667,
+   "cue": 96,
+   "lane": 1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 345.6667,
+   "cue": 97,
+   "shift": -0.2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 345.7667,
+   "cue": 97,
+   "shift": -0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 345.8667,
+   "cue": 97,
+   "shift": 0.0
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 345.9667,
+   "cue": 97,
+   "shift": 0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 346.0667,
+   "cue": 97,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 347.0667,
+   "cue": 97,
+   "after": "LEFT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 348.4333,
+   "cue": 98,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 348.9333,
+   "cue": 98,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 349.4333,
+   "cue": 98,
+   "lane": 0
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 352.3667,
+   "cue": 99,
+   "shift": -0.2
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 352.4667,
+   "cue": 99,
+   "shift": -0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 352.5667,
+   "cue": 99,
+   "shift": 0.0
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 352.6667,
+   "cue": 99,
+   "shift": 0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 352.7667,
+   "cue": 99,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 353.7667,
+   "cue": 99,
+   "after": "RIGHT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 355.1667,
+   "cue": 100,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 355.6667,
+   "cue": 100,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 356.1667,
+   "cue": 100,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 356.6667,
+   "cue": 100,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 357.1667,
+   "cue": 100,
+   "lane": 1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 359.7333,
+   "cue": 101,
+   "shift": -0.2
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 359.8333,
+   "cue": 101,
+   "shift": -0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 359.9333,
+   "cue": 101,
+   "shift": 0.0
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 360.0333,
+   "cue": 101,
+   "shift": 0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 360.1333,
+   "cue": 101,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 361.1333,
+   "cue": 101,
+   "after": "RIGHT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 362.7,
+   "cue": 102,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 363.2,
+   "cue": 102,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 363.7,
+   "cue": 102,
+   "lane": 2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 366.4333,
+   "cue": 103,
+   "shift": -0.2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 366.5333,
+   "cue": 103,
+   "shift": -0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 366.6333,
+   "cue": 103,
+   "shift": 0.0
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 366.7333,
+   "cue": 103,
+   "shift": 0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 366.8333,
+   "cue": 103,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 367.8333,
+   "cue": 103,
+   "after": "LEFT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 369.3333,
+   "cue": 104,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 369.8333,
+   "cue": 104,
+   "lane": 1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 372.5,
+   "cue": 105,
+   "shift": -0.2
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 372.6,
+   "cue": 105,
+   "shift": -0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 372.7,
+   "cue": 105,
+   "shift": 0.0
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 372.8,
+   "cue": 105,
+   "shift": 0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 372.9,
+   "cue": 105,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 373.9,
+   "cue": 105,
+   "after": "JUMP"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 375.4,
+   "cue": 106,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 375.9,
+   "cue": 106,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 376.4,
+   "cue": 106,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 376.9,
+   "cue": 106,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 377.4,
+   "cue": 106,
+   "lane": 1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 380.2667,
+   "cue": 107,
+   "shift": -0.2
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 380.3667,
+   "cue": 107,
+   "shift": -0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 380.4667,
+   "cue": 107,
+   "shift": 0.0
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 380.5667,
+   "cue": 107,
+   "shift": 0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 380.6667,
+   "cue": 107,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 382.8667,
+   "cue": 108,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 389.2,
+   "cue": 110,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 389.7,
+   "cue": 110,
+   "lane": 2
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 392.6333,
+   "cue": 111,
+   "shift": -0.2
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 392.7333,
+   "cue": 111,
+   "shift": -0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 392.8333,
+   "cue": 111,
+   "shift": 0.0
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 392.9333,
+   "cue": 111,
+   "shift": 0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 393.0333,
+   "cue": 111,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 394.0333,
+   "cue": 111,
+   "after": "JUMP"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 395.4333,
+   "cue": 112,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 395.9333,
+   "cue": 112,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 396.4333,
+   "cue": 112,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 396.9333,
+   "cue": 112,
+   "lane": 2
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 399.5333,
+   "cue": 113,
+   "shift": -0.2
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 399.6333,
+   "cue": 113,
+   "shift": -0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 399.7333,
+   "cue": 113,
+   "shift": 0.0
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 399.8333,
+   "cue": 113,
+   "shift": 0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 399.9333,
+   "cue": 113,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 400.9333,
+   "cue": 113,
+   "after": "JUMP"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 402.3667,
+   "cue": 114,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 402.8667,
+   "cue": 114,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 403.3667,
+   "cue": 114,
+   "lane": 2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 406.3667,
+   "cue": 115,
+   "shift": -0.2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 406.4667,
+   "cue": 115,
+   "shift": -0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 406.5667,
+   "cue": 115,
+   "shift": 0.0
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 406.6667,
+   "cue": 115,
+   "shift": 0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 406.7667,
+   "cue": 115,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 407.7667,
+   "cue": 115,
+   "after": "LEFT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 409.2,
+   "cue": 116,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 409.7,
+   "cue": 116,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 410.2,
+   "cue": 116,
+   "lane": 1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 412.7333,
+   "cue": 117,
+   "shift": -0.2
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 412.8333,
+   "cue": 117,
+   "shift": -0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 412.9333,
+   "cue": 117,
+   "shift": 0.0
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 413.0333,
+   "cue": 117,
+   "shift": 0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 413.1333,
+   "cue": 117,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 414.1333,
+   "cue": 117,
+   "after": "DUCK"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 415.7,
+   "cue": 118,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 416.2,
+   "cue": 118,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 416.7,
+   "cue": 118,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 417.2,
+   "cue": 118,
+   "lane": 1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 419.9,
+   "cue": 119,
+   "shift": -0.2
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 420.0,
+   "cue": 119,
+   "shift": -0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 420.1,
+   "cue": 119,
+   "shift": 0.0
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 420.2,
+   "cue": 119,
+   "shift": 0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 420.3,
+   "cue": 119,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 421.3,
+   "cue": 119,
+   "after": "JUMP"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 422.7333,
+   "cue": 120,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 423.2333,
+   "cue": 120,
+   "lane": 1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 426.1333,
+   "cue": 121,
+   "shift": -0.2
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 426.2333,
+   "cue": 121,
+   "shift": -0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 426.3333,
+   "cue": 121,
+   "shift": 0.0
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 426.4333,
+   "cue": 121,
+   "shift": 0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 426.5333,
+   "cue": 121,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 427.5333,
+   "cue": 121,
+   "after": "JUMP"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 429.0,
+   "cue": 122,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 429.5,
+   "cue": 122,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 430.0,
+   "cue": 122,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 430.5,
+   "cue": 122,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 433.2,
+   "cue": 123,
+   "detail": "fold your arms"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 433.4333,
+   "cue": 123,
+   "detail": "fold your arms"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 433.7,
+   "cue": 123,
+   "detail": "fold your arms"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 433.9333,
+   "cue": 123,
+   "detail": "fold your arms"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 434.2,
+   "cue": 123,
+   "detail": "fold your arms"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 434.4333,
+   "cue": 123,
+   "detail": "fold your arms"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 434.7,
+   "cue": 123,
+   "detail": "fold your arms"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 436.2333,
+   "cue": 124,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 436.7333,
+   "cue": 124,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 437.2333,
+   "cue": 124,
+   "lane": 1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 439.7667,
+   "cue": 125,
+   "shift": -0.2
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 439.8667,
+   "cue": 125,
+   "shift": -0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 439.9667,
+   "cue": 125,
+   "shift": 0.0
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 440.0667,
+   "cue": 125,
+   "shift": 0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 440.1667,
+   "cue": 125,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 441.1667,
+   "cue": 125,
+   "after": "RIGHT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 442.6667,
+   "cue": 126,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 443.1667,
+   "cue": 126,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 443.6667,
+   "cue": 126,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 444.1667,
+   "cue": 126,
+   "lane": 2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 446.6667,
+   "cue": 127,
+   "shift": -0.2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 446.7667,
+   "cue": 127,
+   "shift": -0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 446.8667,
+   "cue": 127,
+   "shift": 0.0
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 446.9667,
+   "cue": 127,
+   "shift": 0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 447.0667,
+   "cue": 127,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 448.0667,
+   "cue": 127,
+   "after": "LEFT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 449.5667,
+   "cue": 128,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 450.0667,
+   "cue": 128,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 450.5667,
+   "cue": 128,
+   "lane": 1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 452.9667,
+   "cue": 129,
+   "shift": -0.2
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 453.0667,
+   "cue": 129,
+   "shift": -0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 453.1667,
+   "cue": 129,
+   "shift": 0.0
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 453.2667,
+   "cue": 129,
+   "shift": 0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 453.3667,
+   "cue": 129,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 454.3667,
+   "cue": 129,
+   "after": "RIGHT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 456.0333,
+   "cue": 130,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 456.5333,
+   "cue": 130,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 457.0333,
+   "cue": 130,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 457.5333,
+   "cue": 130,
+   "lane": 2
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 460.2333,
+   "cue": 131,
+   "shift": -0.2
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 460.3333,
+   "cue": 131,
+   "shift": -0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 460.4333,
+   "cue": 131,
+   "shift": 0.0
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 460.5333,
+   "cue": 131,
+   "shift": 0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 460.6333,
+   "cue": 131,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 461.6333,
+   "cue": 131,
+   "after": "JUMP"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 463.0,
+   "cue": 132,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 463.5,
+   "cue": 132,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 464.0,
+   "cue": 132,
+   "lane": 2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 466.8,
+   "cue": 133,
+   "shift": -0.2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 466.9,
+   "cue": 133,
+   "shift": -0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 467.0,
+   "cue": 133,
+   "shift": 0.0
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 467.1,
+   "cue": 133,
+   "shift": 0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 467.2,
+   "cue": 133,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 468.2,
+   "cue": 133,
+   "after": "LEFT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 469.7,
+   "cue": 134,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 470.2,
+   "cue": 134,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 470.7,
+   "cue": 134,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 471.2,
+   "cue": 134,
+   "lane": 1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 474.3,
+   "cue": 135,
+   "shift": -0.2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 474.4,
+   "cue": 135,
+   "shift": -0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 474.5,
+   "cue": 135,
+   "shift": 0.0
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 474.6,
+   "cue": 135,
+   "shift": 0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 474.7,
+   "cue": 135,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 475.7,
+   "cue": 135,
+   "after": "LEFT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 477.0333,
+   "cue": 136,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 477.5333,
+   "cue": 136,
+   "lane": 0
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 480.4,
+   "cue": 137,
+   "shift": -0.2
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 480.5,
+   "cue": 137,
+   "shift": -0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 480.6,
+   "cue": 137,
+   "shift": 0.0
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 480.7,
+   "cue": 137,
+   "shift": 0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 480.8,
+   "cue": 137,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 481.8,
+   "cue": 137,
+   "after": "RIGHT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 483.3,
+   "cue": 138,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 483.8,
+   "cue": 138,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 484.3,
+   "cue": 138,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 484.8,
+   "cue": 138,
+   "lane": 1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 487.5,
+   "cue": 139,
+   "shift": -0.2
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 487.6,
+   "cue": 139,
+   "shift": -0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 487.7,
+   "cue": 139,
+   "shift": 0.0
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 487.8,
+   "cue": 139,
+   "shift": 0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 487.9,
+   "cue": 139,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 488.9,
+   "cue": 139,
+   "after": "DUCK"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 490.4333,
+   "cue": 140,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 490.9333,
+   "cue": 140,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 491.4333,
+   "cue": 140,
+   "lane": 1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 494.0333,
+   "cue": 141,
+   "shift": -0.2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 494.1333,
+   "cue": 141,
+   "shift": -0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 494.2333,
+   "cue": 141,
+   "shift": 0.0
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 494.3333,
+   "cue": 141,
+   "shift": 0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 494.4333,
+   "cue": 141,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 495.4333,
+   "cue": 141,
+   "after": "LEFT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 496.9,
+   "cue": 142,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 497.4,
+   "cue": 142,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 497.9,
+   "cue": 142,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 498.4,
+   "cue": 142,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 498.9,
+   "cue": 142,
+   "lane": 0
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 501.5667,
+   "cue": 143,
+   "shift": -0.2
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 501.6667,
+   "cue": 143,
+   "shift": -0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 501.7667,
+   "cue": 143,
+   "shift": 0.0
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 501.8667,
+   "cue": 143,
+   "shift": 0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 501.9667,
+   "cue": 143,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 502.9667,
+   "cue": 143,
+   "after": "RIGHT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 504.4333,
+   "cue": 144,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 504.9333,
+   "cue": 144,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 505.4333,
+   "cue": 144,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 505.9333,
+   "cue": 144,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 508.7333,
+   "cue": 145,
+   "detail": "cough"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 509.0,
+   "cue": 145,
+   "detail": "cough"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 509.2333,
+   "cue": 145,
+   "detail": "cough"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 509.5,
+   "cue": 145,
+   "detail": "cough"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 509.7333,
+   "cue": 145,
+   "detail": "cough"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 510.0,
+   "cue": 145,
+   "detail": "cough"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 510.2333,
+   "cue": 145,
+   "detail": "cough"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 511.7667,
+   "cue": 146,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 512.2667,
+   "cue": 146,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 512.7667,
+   "cue": 146,
+   "lane": 1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 515.2667,
+   "cue": 147,
+   "shift": -0.2
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 515.3667,
+   "cue": 147,
+   "shift": -0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 515.4667,
+   "cue": 147,
+   "shift": 0.0
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 515.5667,
+   "cue": 147,
+   "shift": 0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 515.6667,
+   "cue": 147,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 516.6667,
+   "cue": 147,
+   "after": "JUMP"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 518.1333,
+   "cue": 148,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 518.6333,
+   "cue": 148,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 519.1333,
+   "cue": 148,
+   "lane": 1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 522.1,
+   "cue": 149,
+   "shift": -0.2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 522.2,
+   "cue": 149,
+   "shift": -0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 522.3,
+   "cue": 149,
+   "shift": 0.0
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 522.4,
+   "cue": 149,
+   "shift": 0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 522.5,
+   "cue": 149,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 524.7333,
+   "cue": 150,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 525.2333,
+   "cue": 150,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 525.7333,
+   "cue": 150,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 528.3667,
+   "cue": 151,
+   "detail": "shift your weight"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 528.6333,
+   "cue": 151,
+   "detail": "shift your weight"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 528.8667,
+   "cue": 151,
+   "detail": "shift your weight"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 529.1333,
+   "cue": 151,
+   "detail": "shift your weight"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 529.3667,
+   "cue": 151,
+   "detail": "shift your weight"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 529.6333,
+   "cue": 151,
+   "detail": "shift your weight"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 529.8667,
+   "cue": 151,
+   "detail": "shift your weight"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 531.4,
+   "cue": 152,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 531.9,
+   "cue": 152,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 532.4,
+   "cue": 152,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 532.9,
+   "cue": 152,
+   "lane": 0
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 535.6,
+   "cue": 153,
+   "shift": -0.2
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 535.7,
+   "cue": 153,
+   "shift": -0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 535.8,
+   "cue": 153,
+   "shift": 0.0
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 535.9,
+   "cue": 153,
+   "shift": 0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 536.0,
+   "cue": 153,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 537.0,
+   "cue": 153,
+   "after": "RIGHT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 538.3667,
+   "cue": 154,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 538.8667,
+   "cue": 154,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 539.3667,
+   "cue": 154,
+   "lane": 1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 541.8333,
+   "cue": 155,
+   "shift": -0.2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 541.9333,
+   "cue": 155,
+   "shift": -0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 542.0333,
+   "cue": 155,
+   "shift": 0.0
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 542.1333,
+   "cue": 155,
+   "shift": 0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 542.2333,
+   "cue": 155,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 543.2333,
+   "cue": 155,
+   "after": "LEFT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 544.7667,
+   "cue": 156,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 545.2667,
+   "cue": 156,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 545.7667,
+   "cue": 156,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 546.2667,
+   "cue": 156,
+   "lane": 0
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 549.0,
+   "cue": 157,
+   "shift": -0.2
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 549.1,
+   "cue": 157,
+   "shift": -0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 549.2,
+   "cue": 157,
+   "shift": 0.0
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 549.3,
+   "cue": 157,
+   "shift": 0.1
+  },
+  {
+   "label": "JUMP",
+   "source": "gesture",
+   "t0": 549.4,
+   "cue": 157,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 550.4,
+   "cue": 157,
+   "after": "JUMP"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 551.8333,
+   "cue": 158,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 552.3333,
+   "cue": 158,
+   "lane": 0
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 555.0667,
+   "cue": 159,
+   "detail": "scratch your head"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 555.3,
+   "cue": 159,
+   "detail": "scratch your head"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 555.5667,
+   "cue": 159,
+   "detail": "scratch your head"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 555.8,
+   "cue": 159,
+   "detail": "scratch your head"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 556.0667,
+   "cue": 159,
+   "detail": "scratch your head"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 556.3,
+   "cue": 159,
+   "detail": "scratch your head"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 556.5667,
+   "cue": 159,
+   "detail": "scratch your head"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 558.6,
+   "cue": 160,
+   "lane": 0
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 561.2667,
+   "cue": 161,
+   "shift": -0.2
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 561.3667,
+   "cue": 161,
+   "shift": -0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 561.4667,
+   "cue": 161,
+   "shift": 0.0
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 561.5667,
+   "cue": 161,
+   "shift": 0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 561.6667,
+   "cue": 161,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 562.6667,
+   "cue": 161,
+   "after": "RIGHT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 564.2333,
+   "cue": 162,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 564.7333,
+   "cue": 162,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 565.2333,
+   "cue": 162,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 565.7333,
+   "cue": 162,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 568.3667,
+   "cue": 163,
+   "detail": "lean in toward the screen"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 568.6333,
+   "cue": 163,
+   "detail": "lean in toward the screen"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 568.8667,
+   "cue": 163,
+   "detail": "lean in toward the screen"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 569.1333,
+   "cue": 163,
+   "detail": "lean in toward the screen"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 569.3667,
+   "cue": 163,
+   "detail": "lean in toward the screen"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 569.6333,
+   "cue": 163,
+   "detail": "lean in toward the screen"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 569.8667,
+   "cue": 163,
+   "detail": "lean in toward the screen"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 571.9,
+   "cue": 164,
+   "lane": 1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 575.2,
+   "cue": 165,
+   "shift": -0.2
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 575.3,
+   "cue": 165,
+   "shift": -0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 575.4,
+   "cue": 165,
+   "shift": 0.0
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 575.5,
+   "cue": 165,
+   "shift": 0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 575.6,
+   "cue": 165,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 576.6,
+   "cue": 165,
+   "after": "RIGHT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 578.0,
+   "cue": 166,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 578.5,
+   "cue": 166,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 579.0,
+   "cue": 166,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 579.5,
+   "cue": 166,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 581.8667,
+   "cue": 167,
+   "detail": "look over your shoulder"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 582.1333,
+   "cue": 167,
+   "detail": "look over your shoulder"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 582.3667,
+   "cue": 167,
+   "detail": "look over your shoulder"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 582.6333,
+   "cue": 167,
+   "detail": "look over your shoulder"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 582.8667,
+   "cue": 167,
+   "detail": "look over your shoulder"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 583.1333,
+   "cue": 167,
+   "detail": "look over your shoulder"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 583.3667,
+   "cue": 167,
+   "detail": "look over your shoulder"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 584.9,
+   "cue": 168,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 585.4,
+   "cue": 168,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 585.9,
+   "cue": 168,
+   "lane": 2
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 588.7,
+   "cue": 169,
+   "shift": -0.2
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 588.8,
+   "cue": 169,
+   "shift": -0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 588.9,
+   "cue": 169,
+   "shift": 0.0
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 589.0,
+   "cue": 169,
+   "shift": 0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 589.1,
+   "cue": 169,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 590.1,
+   "cue": 169,
+   "after": "DUCK"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 591.6333,
+   "cue": 170,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 592.1333,
+   "cue": 170,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 592.6333,
+   "cue": 170,
+   "lane": 2
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 595.3,
+   "cue": 171,
+   "shift": -0.2
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 595.4,
+   "cue": 171,
+   "shift": -0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 595.5,
+   "cue": 171,
+   "shift": 0.0
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 595.6,
+   "cue": 171,
+   "shift": 0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 595.7,
+   "cue": 171,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 596.7,
+   "cue": 171,
+   "after": "DUCK"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 598.1667,
+   "cue": 172,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 598.6667,
+   "cue": 172,
+   "lane": 2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 601.5667,
+   "cue": 173,
+   "shift": -0.2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 601.6667,
+   "cue": 173,
+   "shift": -0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 601.7667,
+   "cue": 173,
+   "shift": 0.0
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 601.8667,
+   "cue": 173,
+   "shift": 0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 601.9667,
+   "cue": 173,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 602.9667,
+   "cue": 173,
+   "after": "LEFT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 604.4333,
+   "cue": 174,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 604.9333,
+   "cue": 174,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 605.4333,
+   "cue": 174,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 608.2,
+   "cue": 175,
+   "detail": "stretch your arms up"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 608.4333,
+   "cue": 175,
+   "detail": "stretch your arms up"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 608.7,
+   "cue": 175,
+   "detail": "stretch your arms up"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 608.9333,
+   "cue": 175,
+   "detail": "stretch your arms up"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 609.2,
+   "cue": 175,
+   "detail": "stretch your arms up"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 609.4333,
+   "cue": 175,
+   "detail": "stretch your arms up"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 609.7,
+   "cue": 175,
+   "detail": "stretch your arms up"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 611.2333,
+   "cue": 176,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 611.7333,
+   "cue": 176,
+   "lane": 1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 614.6667,
+   "cue": 177,
+   "shift": -0.2
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 614.7667,
+   "cue": 177,
+   "shift": -0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 614.8667,
+   "cue": 177,
+   "shift": 0.0
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 614.9667,
+   "cue": 177,
+   "shift": 0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 615.0667,
+   "cue": 177,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 616.0667,
+   "cue": 177,
+   "after": "DUCK"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 617.5333,
+   "cue": 178,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 618.0333,
+   "cue": 178,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 618.5333,
+   "cue": 178,
+   "lane": 1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 621.2,
+   "cue": 179,
+   "shift": -0.2
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 621.3,
+   "cue": 179,
+   "shift": -0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 621.4,
+   "cue": 179,
+   "shift": 0.0
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 621.5,
+   "cue": 179,
+   "shift": 0.1
+  },
+  {
+   "label": "RIGHT",
+   "source": "gesture",
+   "t0": 621.6,
+   "cue": 179,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 622.6,
+   "cue": 179,
+   "after": "RIGHT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 624.1,
+   "cue": 180,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 624.6,
+   "cue": 180,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 625.1,
+   "cue": 180,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 625.6,
+   "cue": 180,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 626.1,
+   "cue": 180,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 628.6667,
+   "cue": 181,
+   "detail": "roll your shoulders"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 628.9,
+   "cue": 181,
+   "detail": "roll your shoulders"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 629.1667,
+   "cue": 181,
+   "detail": "roll your shoulders"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 629.4,
+   "cue": 181,
+   "detail": "roll your shoulders"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 629.6667,
+   "cue": 181,
+   "detail": "roll your shoulders"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 629.9,
+   "cue": 181,
+   "detail": "roll your shoulders"
+  },
+  {
+   "label": "IDLE",
+   "source": "distractor",
+   "t0": 630.1667,
+   "cue": 181,
+   "detail": "roll your shoulders"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 631.7,
+   "cue": 182,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 632.2,
+   "cue": 182,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 632.7,
+   "cue": 182,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 633.2,
+   "cue": 182,
+   "lane": 2
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 635.9,
+   "cue": 183,
+   "shift": -0.2
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 636.0,
+   "cue": 183,
+   "shift": -0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 636.1,
+   "cue": 183,
+   "shift": 0.0
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 636.2,
+   "cue": 183,
+   "shift": 0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 636.3,
+   "cue": 183,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 637.3,
+   "cue": 183,
+   "after": "DUCK"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 638.8333,
+   "cue": 184,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 639.3333,
+   "cue": 184,
+   "lane": 2
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 639.8333,
+   "cue": 184,
+   "lane": 2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 642.4,
+   "cue": 185,
+   "shift": -0.2
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 642.5,
+   "cue": 185,
+   "shift": -0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 642.6,
+   "cue": 185,
+   "shift": 0.0
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 642.7,
+   "cue": 185,
+   "shift": 0.1
+  },
+  {
+   "label": "LEFT",
+   "source": "gesture",
+   "t0": 642.8,
+   "cue": 185,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 643.8,
+   "cue": 185,
+   "after": "LEFT"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 645.3,
+   "cue": 186,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 645.8,
+   "cue": 186,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 646.3,
+   "cue": 186,
+   "lane": 1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 648.9667,
+   "cue": 187,
+   "shift": -0.2
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 649.0667,
+   "cue": 187,
+   "shift": -0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 649.1667,
+   "cue": 187,
+   "shift": 0.0
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 649.2667,
+   "cue": 187,
+   "shift": 0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 649.3667,
+   "cue": 187,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 650.3667,
+   "cue": 187,
+   "after": "DUCK"
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 651.9333,
+   "cue": 188,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 652.4333,
+   "cue": 188,
+   "lane": 1
+  },
+  {
+   "label": "IDLE",
+   "source": "rest",
+   "t0": 652.9333,
+   "cue": 188,
+   "lane": 1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 655.6667,
+   "cue": 189,
+   "shift": -0.2
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 655.7667,
+   "cue": 189,
+   "shift": -0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 655.8667,
+   "cue": 189,
+   "shift": 0.0
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 655.9667,
+   "cue": 189,
+   "shift": 0.1
+  },
+  {
+   "label": "DUCK",
+   "source": "gesture",
+   "t0": 656.0667,
+   "cue": 189,
+   "shift": 0.2
+  },
+  {
+   "label": "IDLE",
+   "source": "recovery",
+   "t0": 657.0667,
+   "cue": 189,
+   "after": "DUCK"
+  }
+ ]
+}
