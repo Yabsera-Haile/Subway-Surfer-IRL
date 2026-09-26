@@ -1,0 +1,1748 @@
+{
+  "session": "s01",
+  "started_at": "2026-09-25T21:20:45+02:00",
+  "camera": {
+    "index": 0,
+    "backend": "dshow",
+    "width": 640,
+    "height": 480
+  },
+  "fps": {
+    "mean": 28.0,
+    "p50": 30.0,
+    "p95": 36.9,
+    "n_frames": 18532
+  },
+  "stage_ms": {
+    "capture_p50": 0.3,
+    "capture_p95": 10.3,
+    "pose_p50": 26.7,
+    "pose_p95": 41.4
+  },
+  "reps_per_class": 20,
+  "distractors": 15,
+  "seed": 154352488,
+  "lanes": 3,
+  "action_s": 3.0,
+  "tail_s": 3.0,
+  "dry_run": false,
+  "framing": {
+    "t_end": 16.511627900006715,
+    "score": 1.0,
+    "fps": 28.6
+  },
+  "aborted": null,
+  "cues": [
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 16.511627900006715,
+      "t_cue": null,
+      "t_end": 19.046169699984603,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "distractor",
+      "label": "check your watch",
+      "t_start": 20.066332200018223,
+      "t_cue": 20.108729500032496,
+      "t_end": 23.12267360003898,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 23.12267360003898,
+      "t_cue": null,
+      "t_end": 26.035583499993663,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "LEFT",
+      "t_start": 27.05645060003735,
+      "t_cue": 27.086036299995612,
+      "t_end": 30.115514300006907,
+      "lane_from": 1,
+      "lane_to": 0
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 30.115514300006907,
+      "t_cue": null,
+      "t_end": 32.75643020001007,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "gesture",
+      "label": "DUCK",
+      "t_start": 33.77372180001112,
+      "t_cue": 33.809617699997034,
+      "t_end": 36.822307800001,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 36.822307800001,
+      "t_cue": null,
+      "t_end": 39.51131830003578,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "gesture",
+      "label": "RIGHT",
+      "t_start": 40.51995079999324,
+      "t_cue": 40.55439629999455,
+      "t_end": 43.57080390001647,
+      "lane_from": 0,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 43.57080390001647,
+      "t_cue": null,
+      "t_end": 46.27472759998636,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "LEFT",
+      "t_start": 47.292323200032115,
+      "t_cue": 47.32972660002997,
+      "t_end": 50.36234210000839,
+      "lane_from": 1,
+      "lane_to": 0
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 50.36234210000839,
+      "t_cue": null,
+      "t_end": 52.70796860003611,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "gesture",
+      "label": "RIGHT",
+      "t_start": 53.721055300033186,
+      "t_cue": 53.74685719999252,
+      "t_end": 56.76164720003726,
+      "lane_from": 0,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 56.76164720003726,
+      "t_cue": null,
+      "t_end": 59.69885809998959,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "LEFT",
+      "t_start": 60.707786299986765,
+      "t_cue": 60.734780099999625,
+      "t_end": 63.75416429998586,
+      "lane_from": 1,
+      "lane_to": 0
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 63.75416429998586,
+      "t_cue": null,
+      "t_end": 66.72353270003805,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "gesture",
+      "label": "JUMP",
+      "t_start": 67.75562529999297,
+      "t_cue": 67.80183150002267,
+      "t_end": 70.81350200000452,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 70.81350200000452,
+      "t_cue": null,
+      "t_end": 73.49104709998937,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "gesture",
+      "label": "JUMP",
+      "t_start": 74.51550059998408,
+      "t_cue": 74.5441646000254,
+      "t_end": 77.54780729999766,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 77.54780729999766,
+      "t_cue": null,
+      "t_end": 80.87789320002776,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "gesture",
+      "label": "DUCK",
+      "t_start": 81.91245940001681,
+      "t_cue": 81.95674029999645,
+      "t_end": 84.9810064000194,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 84.9810064000194,
+      "t_cue": null,
+      "t_end": 87.94187069998588,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "gesture",
+      "label": "RIGHT",
+      "t_start": 88.94757970003411,
+      "t_cue": 88.97461600002134,
+      "t_end": 91.97950980003225,
+      "lane_from": 0,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 91.97950980003225,
+      "t_cue": null,
+      "t_end": 94.5541741999914,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "DUCK",
+      "t_start": 95.57845020003151,
+      "t_cue": 95.61792889999924,
+      "t_end": 98.63863110000966,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 98.63863110000966,
+      "t_cue": null,
+      "t_end": 101.41121660004137,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "RIGHT",
+      "t_start": 102.41896390001057,
+      "t_cue": 102.44992620003177,
+      "t_end": 105.47033650003141,
+      "lane_from": 1,
+      "lane_to": 2
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 105.47033650003141,
+      "t_cue": null,
+      "t_end": 108.21637270000065,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "gesture",
+      "label": "LEFT",
+      "t_start": 109.2524129000376,
+      "t_cue": 109.30183960002614,
+      "t_end": 112.30863550002687,
+      "lane_from": 2,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 112.30863550002687,
+      "t_cue": null,
+      "t_end": 115.34666069998639,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "JUMP",
+      "t_start": 116.35584420000669,
+      "t_cue": 116.39124369999627,
+      "t_end": 119.3952218000195,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 119.3952218000195,
+      "t_cue": null,
+      "t_end": 121.8742862000363,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "RIGHT",
+      "t_start": 122.8946200000355,
+      "t_cue": 122.9265894999844,
+      "t_end": 125.94292689999565,
+      "lane_from": 1,
+      "lane_to": 2
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 125.94292689999565,
+      "t_cue": null,
+      "t_end": 128.89662090002093,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "gesture",
+      "label": "LEFT",
+      "t_start": 129.89722400001483,
+      "t_cue": 129.93385289999424,
+      "t_end": 132.94791859999532,
+      "lane_from": 2,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 132.94791859999532,
+      "t_cue": null,
+      "t_end": 135.01318950002315,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "DUCK",
+      "t_start": 136.05433210002957,
+      "t_cue": 136.10395369998878,
+      "t_end": 139.1086083999835,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 139.1086083999835,
+      "t_cue": null,
+      "t_end": 141.51522559998557,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "distractor",
+      "label": "rub your eyes",
+      "t_start": 142.53064680000534,
+      "t_cue": 142.56237370002782,
+      "t_end": 145.5699076000019,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 145.5699076000019,
+      "t_cue": null,
+      "t_end": 147.9860927000409,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "JUMP",
+      "t_start": 148.99492780002765,
+      "t_cue": 149.02677230001427,
+      "t_end": 152.0354711000109,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 152.0354711000109,
+      "t_cue": null,
+      "t_end": 154.4768846000079,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "JUMP",
+      "t_start": 155.50752650003415,
+      "t_cue": 155.54230570001528,
+      "t_end": 158.56212740001502,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 158.56212740001502,
+      "t_cue": null,
+      "t_end": 161.23483830003534,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "distractor",
+      "label": "adjust your shirt",
+      "t_start": 162.24239999998827,
+      "t_cue": 162.2743741000304,
+      "t_end": 165.2873081000289,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 165.2873081000289,
+      "t_cue": null,
+      "t_end": 168.32290090003517,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "LEFT",
+      "t_start": 169.33111309999367,
+      "t_cue": 169.35858240001835,
+      "t_end": 172.36024390003877,
+      "lane_from": 1,
+      "lane_to": 0
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 172.36024390003877,
+      "t_cue": null,
+      "t_end": 174.7958823000081,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "gesture",
+      "label": "DUCK",
+      "t_start": 175.8089332000236,
+      "t_cue": 175.84140450000996,
+      "t_end": 178.84908140002517,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 178.84908140002517,
+      "t_cue": null,
+      "t_end": 182.05372850003187,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "gesture",
+      "label": "JUMP",
+      "t_start": 183.05885080003645,
+      "t_cue": 183.08575229998678,
+      "t_end": 186.09824190003565,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 186.09824190003565,
+      "t_cue": null,
+      "t_end": 189.44843940000283,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "gesture",
+      "label": "DUCK",
+      "t_start": 190.46897290000925,
+      "t_cue": 190.51683949999278,
+      "t_end": 193.5317196000251,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 193.5317196000251,
+      "t_cue": null,
+      "t_end": 196.90961899998365,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "gesture",
+      "label": "JUMP",
+      "t_start": 197.94545130000915,
+      "t_cue": 197.9957608000259,
+      "t_end": 201.00518269999884,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 201.00518269999884,
+      "t_cue": null,
+      "t_end": 203.51944760000333,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "gesture",
+      "label": "RIGHT",
+      "t_start": 204.55542210000567,
+      "t_cue": 204.59888820000924,
+      "t_end": 207.620212000038,
+      "lane_from": 0,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 207.620212000038,
+      "t_cue": null,
+      "t_end": 210.3734843999846,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "distractor",
+      "label": "wave at the camera",
+      "t_start": 211.39417360001244,
+      "t_cue": 211.42286859999876,
+      "t_end": 214.43732229998568,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 214.43732229998568,
+      "t_cue": null,
+      "t_end": 217.10272010002518,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "DUCK",
+      "t_start": 218.12744350003777,
+      "t_cue": 218.16539450001437,
+      "t_end": 221.17623819998698,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 221.17623819998698,
+      "t_cue": null,
+      "t_end": 223.7896304000169,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "DUCK",
+      "t_start": 224.8228154000244,
+      "t_cue": 224.86381459998665,
+      "t_end": 227.8912320000236,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 227.8912320000236,
+      "t_cue": null,
+      "t_end": 230.09414160001324,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "JUMP",
+      "t_start": 231.1201233000029,
+      "t_cue": 231.15981660003308,
+      "t_end": 234.1766847000108,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 234.1766847000108,
+      "t_cue": null,
+      "t_end": 237.6663312999881,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "JUMP",
+      "t_start": 238.68370250001317,
+      "t_cue": 238.71673640003428,
+      "t_end": 241.74077919998672,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 241.74077919998672,
+      "t_cue": null,
+      "t_end": 245.1078498000279,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "RIGHT",
+      "t_start": 246.135545200028,
+      "t_cue": 246.16943539999193,
+      "t_end": 249.18120980000822,
+      "lane_from": 1,
+      "lane_to": 2
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 249.18120980000822,
+      "t_cue": null,
+      "t_end": 251.77220760000637,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "distractor",
+      "label": "reach to the side for a cup",
+      "t_start": 252.81227140000556,
+      "t_cue": 252.84898710000562,
+      "t_end": 255.8791127000004,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 255.8791127000004,
+      "t_cue": null,
+      "t_end": 258.25938030000543,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "gesture",
+      "label": "JUMP",
+      "t_start": 259.264404400019,
+      "t_cue": 259.306951400009,
+      "t_end": 262.3383545000106,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 262.3383545000106,
+      "t_cue": null,
+      "t_end": 264.4614211000153,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "gesture",
+      "label": "DUCK",
+      "t_start": 265.46245350001846,
+      "t_cue": 265.5068690000335,
+      "t_end": 268.53205989999697,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 268.53205989999697,
+      "t_cue": null,
+      "t_end": 271.4750112000038,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "gesture",
+      "label": "JUMP",
+      "t_start": 272.48310559999663,
+      "t_cue": 272.5159822999849,
+      "t_end": 275.5232408000156,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 275.5232408000156,
+      "t_cue": null,
+      "t_end": 277.73158970003715,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "gesture",
+      "label": "LEFT",
+      "t_start": 278.75013440003386,
+      "t_cue": 278.8044111999916,
+      "t_end": 281.8106325000408,
+      "lane_from": 2,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 281.8106325000408,
+      "t_cue": null,
+      "t_end": 283.86922069999855,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "DUCK",
+      "t_start": 284.8980134000303,
+      "t_cue": 284.9258288000128,
+      "t_end": 287.93828360002954,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 287.93828360002954,
+      "t_cue": null,
+      "t_end": 290.24324510002043,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "DUCK",
+      "t_start": 291.2561587000382,
+      "t_cue": 291.28890970000066,
+      "t_end": 294.29069100000197,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 294.29069100000197,
+      "t_cue": null,
+      "t_end": 297.23414930002764,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "RIGHT",
+      "t_start": 298.2424193000188,
+      "t_cue": 298.2650475000264,
+      "t_end": 301.2828784000012,
+      "lane_from": 1,
+      "lane_to": 2
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 301.2828784000012,
+      "t_cue": null,
+      "t_end": 303.5788331000367,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "gesture",
+      "label": "LEFT",
+      "t_start": 304.59440110001015,
+      "t_cue": 304.6258761000354,
+      "t_end": 307.65075319999596,
+      "lane_from": 2,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 307.65075319999596,
+      "t_cue": null,
+      "t_end": 310.1633761000121,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "distractor",
+      "label": "roll your shoulders",
+      "t_start": 311.1713683999842,
+      "t_cue": 311.21036480000475,
+      "t_end": 314.2433665000135,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 314.2433665000135,
+      "t_cue": null,
+      "t_end": 316.78646239999216,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "DUCK",
+      "t_start": 317.79470309999306,
+      "t_cue": 317.83625410002423,
+      "t_end": 320.87217430002056,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 320.87217430002056,
+      "t_cue": null,
+      "t_end": 324.28160899999784,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "RIGHT",
+      "t_start": 325.287363200041,
+      "t_cue": 325.3534996000235,
+      "t_end": 328.36302340001566,
+      "lane_from": 1,
+      "lane_to": 2
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 328.36302340001566,
+      "t_cue": null,
+      "t_end": 331.0116555999848,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "gesture",
+      "label": "LEFT",
+      "t_start": 332.0199015000253,
+      "t_cue": 332.0519386000233,
+      "t_end": 335.05779880000046,
+      "lane_from": 2,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 335.05779880000046,
+      "t_cue": null,
+      "t_end": 338.0386067000218,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "distractor",
+      "label": "turn and talk to someone",
+      "t_start": 339.0423087000381,
+      "t_cue": 339.0709702000022,
+      "t_end": 342.07384969998384,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 342.07384969998384,
+      "t_cue": null,
+      "t_end": 344.0860257000313,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "LEFT",
+      "t_start": 345.09167330001947,
+      "t_cue": 345.1273130000336,
+      "t_end": 348.1464125000057,
+      "lane_from": 1,
+      "lane_to": 0
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 348.1464125000057,
+      "t_cue": null,
+      "t_end": 350.8186535999994,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "gesture",
+      "label": "RIGHT",
+      "t_start": 351.8270632000058,
+      "t_cue": 351.8566273000324,
+      "t_end": 354.88272850000067,
+      "lane_from": 0,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 354.88272850000067,
+      "t_cue": null,
+      "t_end": 358.3552229999914,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "RIGHT",
+      "t_start": 359.36326330003794,
+      "t_cue": 359.3961607000092,
+      "t_end": 362.40282640000805,
+      "lane_from": 1,
+      "lane_to": 2
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 362.40282640000805,
+      "t_cue": null,
+      "t_end": 364.92295199999353,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "gesture",
+      "label": "LEFT",
+      "t_start": 365.9564149000216,
+      "t_cue": 365.9989107000292,
+      "t_end": 369.0273704000283,
+      "lane_from": 2,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 369.0273704000283,
+      "t_cue": null,
+      "t_end": 371.0428772000014,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "JUMP",
+      "t_start": 372.0656611000304,
+      "t_cue": 372.0880453999853,
+      "t_end": 375.09971740003675,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 375.09971740003675,
+      "t_cue": null,
+      "t_end": 378.4995071000303,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "JUMP",
+      "t_start": 379.5115562999854,
+      "t_cue": 379.5534570000018,
+      "t_end": 382.57900319999317,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 382.57900319999317,
+      "t_cue": null,
+      "t_end": 384.85204750002595,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "RIGHT",
+      "t_start": 385.8625635000062,
+      "t_cue": 385.90288690000307,
+      "t_end": 388.9066751000355,
+      "lane_from": 1,
+      "lane_to": 2
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 388.9066751000355,
+      "t_cue": null,
+      "t_end": 391.0748515999876,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "gesture",
+      "label": "JUMP",
+      "t_start": 392.08374909998383,
+      "t_cue": 392.10796330001904,
+      "t_end": 395.13857400004053,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 395.13857400004053,
+      "t_cue": null,
+      "t_end": 398.02051740000024,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "gesture",
+      "label": "JUMP",
+      "t_start": 399.04339240002446,
+      "t_cue": 399.0674006000045,
+      "t_end": 402.0708111000131,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 402.0708111000131,
+      "t_cue": null,
+      "t_end": 404.82085730001563,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "gesture",
+      "label": "LEFT",
+      "t_start": 405.8420119000366,
+      "t_cue": 405.8829158000299,
+      "t_end": 408.91492370003834,
+      "lane_from": 2,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 408.91492370003834,
+      "t_cue": null,
+      "t_end": 411.3357898000395,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "DUCK",
+      "t_start": 412.36385160003556,
+      "t_cue": 412.39593759999843,
+      "t_end": 415.41100140003255,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 415.41100140003255,
+      "t_cue": null,
+      "t_end": 418.3877874999889,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "JUMP",
+      "t_start": 419.39447110000765,
+      "t_cue": 419.4232791000395,
+      "t_end": 422.446325100027,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 422.446325100027,
+      "t_cue": null,
+      "t_end": 424.61107580002863,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "JUMP",
+      "t_start": 425.645138700027,
+      "t_cue": 425.6793061000062,
+      "t_end": 428.68644040002255,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 428.68644040002255,
+      "t_cue": null,
+      "t_end": 431.81124529999215,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "distractor",
+      "label": "fold your arms",
+      "t_start": 432.8363255999866,
+      "t_cue": 432.891747799993,
+      "t_end": 435.9245909000165,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 435.9245909000165,
+      "t_cue": null,
+      "t_end": 438.3083314000396,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "RIGHT",
+      "t_start": 439.31502450001426,
+      "t_cue": 439.3490811000229,
+      "t_end": 442.3593179000309,
+      "lane_from": 1,
+      "lane_to": 2
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 442.3593179000309,
+      "t_cue": null,
+      "t_end": 445.1717849000124,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "gesture",
+      "label": "LEFT",
+      "t_start": 446.1887714000186,
+      "t_cue": 446.2254824999836,
+      "t_end": 449.25573119998444,
+      "lane_from": 2,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 449.25573119998444,
+      "t_cue": null,
+      "t_end": 451.65937870001653,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "RIGHT",
+      "t_start": 452.6909828000353,
+      "t_cue": 452.737359700026,
+      "t_end": 455.7464079000056,
+      "lane_from": 1,
+      "lane_to": 2
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 455.7464079000056,
+      "t_cue": null,
+      "t_end": 458.62371660000645,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "gesture",
+      "label": "JUMP",
+      "t_start": 459.6510130999959,
+      "t_cue": 459.68492840003455,
+      "t_end": 462.70737319998443,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 462.70737319998443,
+      "t_cue": null,
+      "t_end": 465.3202300000121,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "gesture",
+      "label": "LEFT",
+      "t_start": 466.3414584000129,
+      "t_cue": 466.3812322000158,
+      "t_end": 469.41159129998414,
+      "lane_from": 2,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 469.41159129998414,
+      "t_cue": null,
+      "t_end": 472.65515210002195,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "LEFT",
+      "t_start": 473.6858116000076,
+      "t_cue": 473.72166500001913,
+      "t_end": 476.7248588000075,
+      "lane_from": 1,
+      "lane_to": 0
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 476.7248588000075,
+      "t_cue": null,
+      "t_end": 478.9342211000039,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "gesture",
+      "label": "RIGHT",
+      "t_start": 479.9399604999926,
+      "t_cue": 479.9764609000413,
+      "t_end": 482.9857447000104,
+      "lane_from": 0,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 482.9857447000104,
+      "t_cue": null,
+      "t_end": 486.0857805000269,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "DUCK",
+      "t_start": 487.0937860000413,
+      "t_cue": 487.12441719998606,
+      "t_end": 490.1495883000316,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 490.1495883000316,
+      "t_cue": null,
+      "t_end": 492.54741850000573,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "LEFT",
+      "t_start": 493.5678801999893,
+      "t_cue": 493.59978779999074,
+      "t_end": 496.60863390000304,
+      "lane_from": 1,
+      "lane_to": 0
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 496.60863390000304,
+      "t_cue": null,
+      "t_end": 500.08024380001007,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "gesture",
+      "label": "RIGHT",
+      "t_start": 501.0954552000039,
+      "t_cue": 501.12733049999224,
+      "t_end": 504.1496158000082,
+      "lane_from": 0,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 504.1496158000082,
+      "t_cue": null,
+      "t_end": 507.38327990000835,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "distractor",
+      "label": "cough",
+      "t_start": 508.3982329000137,
+      "t_cue": 508.4411436000373,
+      "t_end": 511.46187270001974,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 511.46187270001974,
+      "t_cue": null,
+      "t_end": 513.7622288999846,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "JUMP",
+      "t_start": 514.7726456000237,
+      "t_cue": 514.8117843000218,
+      "t_end": 517.8263068000088,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 517.8263068000088,
+      "t_cue": null,
+      "t_end": 520.3710851999931,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "LEFT",
+      "t_start": 521.3920858000056,
+      "t_cue": 521.4247351000085,
+      "t_end": 524.4315476000193,
+      "lane_from": 1,
+      "lane_to": 0
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 524.4315476000193,
+      "t_cue": null,
+      "t_end": 527.0264519000193,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "distractor",
+      "label": "shift your weight",
+      "t_start": 528.0354318000027,
+      "t_cue": 528.0771457999945,
+      "t_end": 531.1053660000325,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 531.1053660000325,
+      "t_cue": null,
+      "t_end": 533.9864181000157,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "gesture",
+      "label": "RIGHT",
+      "t_start": 535.015281800006,
+      "t_cue": 535.0516817999887,
+      "t_end": 538.0772529999958,
+      "lane_from": 0,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 538.0772529999958,
+      "t_cue": null,
+      "t_end": 540.4111042000004,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "LEFT",
+      "t_start": 541.4141847999999,
+      "t_cue": 541.4574103000341,
+      "t_end": 544.4671730999835,
+      "lane_from": 1,
+      "lane_to": 0
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 544.4671730999835,
+      "t_cue": null,
+      "t_end": 547.442423600005,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "gesture",
+      "label": "JUMP",
+      "t_start": 548.4623038999853,
+      "t_cue": 548.5094383000396,
+      "t_end": 551.5227684000274,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 551.5227684000274,
+      "t_cue": null,
+      "t_end": 553.7142936000018,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "distractor",
+      "label": "scratch your head",
+      "t_start": 554.7205277000321,
+      "t_cue": 554.757450300036,
+      "t_end": 557.7845916000078,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 557.7845916000078,
+      "t_cue": null,
+      "t_end": 559.8926624000305,
+      "lane_from": 0,
+      "lane_to": 0
+    },
+    {
+      "kind": "gesture",
+      "label": "RIGHT",
+      "t_start": 560.8980360000278,
+      "t_cue": 560.9256170000299,
+      "t_end": 563.9445101000019,
+      "lane_from": 0,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 563.9445101000019,
+      "t_cue": null,
+      "t_end": 567.0471898000105,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "distractor",
+      "label": "lean in toward the screen",
+      "t_start": 568.0507602000143,
+      "t_cue": 568.0808371999883,
+      "t_end": 571.1135352000128,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 571.1135352000128,
+      "t_cue": null,
+      "t_end": 573.6023042000015,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "RIGHT",
+      "t_start": 574.6048727000016,
+      "t_cue": 574.6567026000121,
+      "t_end": 577.7019494000124,
+      "lane_from": 1,
+      "lane_to": 2
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 577.7019494000124,
+      "t_cue": null,
+      "t_end": 580.5323852000292,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "distractor",
+      "label": "look over your shoulder",
+      "t_start": 581.5399688000325,
+      "t_cue": 581.5800947000389,
+      "t_end": 584.6002049000235,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 584.6002049000235,
+      "t_cue": null,
+      "t_end": 587.2698602000019,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "gesture",
+      "label": "DUCK",
+      "t_start": 588.3069976000115,
+      "t_cue": 588.3402776999865,
+      "t_end": 591.3420991000021,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 591.3420991000021,
+      "t_cue": null,
+      "t_end": 593.7940086000017,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "gesture",
+      "label": "DUCK",
+      "t_start": 594.8185213000397,
+      "t_cue": 594.8478195000207,
+      "t_end": 597.8744157000328,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 597.8744157000328,
+      "t_cue": null,
+      "t_end": 600.0246322000166,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "gesture",
+      "label": "LEFT",
+      "t_start": 601.0582948999945,
+      "t_cue": 601.0922418000409,
+      "t_end": 604.1199990999885,
+      "lane_from": 2,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 604.1199990999885,
+      "t_cue": null,
+      "t_end": 606.8223420000286,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "distractor",
+      "label": "stretch your arms up",
+      "t_start": 607.8504775000038,
+      "t_cue": 607.8939675000147,
+      "t_end": 610.9309628999908,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 610.9309628999908,
+      "t_cue": null,
+      "t_end": 613.1808376000263,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "DUCK",
+      "t_start": 614.2112900000066,
+      "t_cue": 614.2396116000018,
+      "t_end": 617.2417731999885,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 617.2417731999885,
+      "t_cue": null,
+      "t_end": 619.7344494999852,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "RIGHT",
+      "t_start": 620.7636000000057,
+      "t_cue": 620.7899799000006,
+      "t_end": 623.8087216999847,
+      "lane_from": 1,
+      "lane_to": 2
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 623.8087216999847,
+      "t_cue": null,
+      "t_end": 627.2934978000121,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "distractor",
+      "label": "roll your shoulders",
+      "t_start": 628.3203392000287,
+      "t_cue": 628.3646120000049,
+      "t_end": 631.3984559000237,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 631.3984559000237,
+      "t_cue": null,
+      "t_end": 634.4730289999861,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "gesture",
+      "label": "DUCK",
+      "t_start": 635.4745572000393,
+      "t_cue": 635.5224147000117,
+      "t_end": 638.5308640000294,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 638.5308640000294,
+      "t_cue": null,
+      "t_end": 640.9172041999991,
+      "lane_from": 2,
+      "lane_to": 2
+    },
+    {
+      "kind": "gesture",
+      "label": "LEFT",
+      "t_start": 641.9533377999905,
+      "t_cue": 641.9837049000198,
+      "t_end": 645.0062413000269,
+      "lane_from": 2,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 645.0062413000269,
+      "t_cue": null,
+      "t_end": 647.5509356000111,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "DUCK",
+      "t_start": 648.5532706000376,
+      "t_cue": 648.5926780999871,
+      "t_end": 651.628057599999,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "rest",
+      "label": null,
+      "t_start": 651.628057599999,
+      "t_cue": null,
+      "t_end": 654.258049600001,
+      "lane_from": 1,
+      "lane_to": 1
+    },
+    {
+      "kind": "gesture",
+      "label": "DUCK",
+      "t_start": 655.2670450999867,
+      "t_cue": 655.296197800024,
+      "t_end": 658.3138947000261,
+      "lane_from": 1,
+      "lane_to": 1
+    }
+  ],
+  "notes": ""
+}
