@@ -1,15 +1,3 @@
-#!/usr/bin/env python3
-"""
-STEP 3 - Turn raw sessions into labelled windows.
-
-Run:  python label_windows.py [--sessions s01 s02] [--raw data/raw] [--out data/labels]
-
-Writes data/labels/<session>.json: which stretches of each recording are
-LEFT / RIGHT / JUMP / DUCK / IDLE, and every rep that was dropped and why.
-Windows are stored as start times, not copied landmarks; load() rebuilds them
-from the raw file.
-"""
-
 import argparse
 import collections
 import glob
@@ -18,51 +6,26 @@ import os
 
 import numpy as np
 
-from pose import L_HIP, R_HIP, L_SHOULDER, R_SHOULDER
+from pipeline import HZ, MAX_INTERP_S, WINDOW_N, body_centre, resample
 
-HZ = 30               # sessions are resampled to this so frame rate can't leak into the model
-WINDOW_S = 1.0
-WINDOW_N = int(round(WINDOW_S * HZ))
+WINDOW_S = WINDOW_N / HZ
 
-# Gesture windows start a little before the movement so the classifier sees
-# the transition out of standing, and are repeated at small offsets because a
-# live sliding window will catch the gesture anywhere inside it.
-PRE_S = 0.2
-SHIFTS_S = (-0.2, -0.1, 0.0, 0.1, 0.2)
+GESTURE_ENDS_S = (0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.5)
 
 REST_SKIP_S = 0.3
 REST_STRIDE_S = 0.5
 DISTRACTOR_STRIDE_S = 0.25
-RECOVERY_STRIDE_S = 0.5
+RECOVERY_FROM_S = 0.4
+RECOVERY_STRIDE_S = 0.25
 
-ONSET_RISE = 0.10     # body-centre displacement, in torso lengths, that counts as moving
-ONSET_FLOOR = 0.04    # walk back from the rise to where the movement actually began
-MIN_TRAVEL = 0.20     # a rep that never gets this far the expected way is dropped
-READY_LIMIT = 0.10    # moving this much during the countdown means the cue was anticipated
-MAX_HOLE_S = 0.15     # a gap this long inside a rep means it was not really observed
-MAX_INTERP_S = 0.10   # grid points further than this from real frames are unusable
-REST_QUIET = 0.15     # a rest window moving more than this is not idle
+ONSET_RISE = 0.10
+ONSET_FLOOR = 0.04
+MIN_TRAVEL = 0.20
+READY_LIMIT = 0.10
+MAX_HOLE_S = 0.15
+REST_QUIET = 0.15
 
-EXPECT = {"LEFT": (0, -1), "RIGHT": (0, 1), "JUMP": (1, -1), "DUCK": (1, 1)}  # (axis, sign); y grows down
-
-
-def resample(ts, lm, ok):
-    """Onto a fixed HZ grid anchored at session time 0. Returns (k0, grid_t, grid, valid)."""
-    k = np.arange(int(np.ceil(ts[0] * HZ)), int(np.floor(ts[-1] * HZ)) + 1)
-    grid_t = k / HZ
-    good_t = ts[ok]
-    flat = lm[ok].reshape(len(good_t), -1)
-    grid = np.stack([np.interp(grid_t, good_t, flat[:, c]) for c in range(flat.shape[1])], axis=1)
-    # Interpolating across a hole invents motion that was never seen.
-    j = np.clip(np.searchsorted(good_t, grid_t), 1, len(good_t) - 1)
-    valid = ((good_t[j] - good_t[j - 1]) <= MAX_INTERP_S) & (grid_t >= good_t[0]) & (grid_t <= good_t[-1])
-    return int(k[0]), grid_t, grid.reshape(len(k), *lm.shape[1:]).astype(np.float32), valid
-
-
-def body_centre(xy):
-    sh = (xy[..., L_SHOULDER, :] + xy[..., R_SHOULDER, :]) / 2
-    hp = (xy[..., L_HIP, :] + xy[..., R_HIP, :]) / 2
-    return (sh + hp) / 2, np.linalg.norm(sh - hp, axis=-1)
+EXPECT = {"LEFT": (0, -1), "RIGHT": (0, 1), "JUMP": (1, -1), "DUCK": (1, 1)}
 
 
 def smooth(x):
@@ -124,7 +87,6 @@ def label_session(raw_dir, session):
 
         seen = good_t[(good_t >= tc) & (good_t <= te)]
         hole = float(np.diff(seen).max()) if len(seen) > 1 else float("inf")
-        # Baseline is the last half second of the rest, before the countdown starts.
         base = (grid_t >= tc - 1.5) & (grid_t < tc - 1.0)
         c0, tl = np.median(ctr[base], axis=0), np.median(torso[base])
         disp = (ctr - c0) / tl
@@ -140,9 +102,6 @@ def label_session(raw_dir, session):
         elif not len(rising):
             reason = "no movement"
         else:
-            # Walk back only while the signal is still falling: a small drift
-            # during the countdown can sit just above the floor for a second,
-            # and walking through it would put the onset long before the move.
             j = rising[0]
             while j > act[0] and mag[j] > ONSET_FLOOR and mag[j - 1] < mag[j]:
                 j -= 1
@@ -155,12 +114,9 @@ def label_session(raw_dir, session):
             rep.update(status="dropped", reason=reason)
             continue
         n_before = len(windows)
-        for shift in SHIFTS_S:
-            add(label, "gesture", onset - PRE_S + shift, cue=ci, shift=shift)
-        # What follows a gesture - standing back up from a duck, landing, settling
-        # into the new lane - must read as idle, or it will fire gestures of its own.
-        slide("IDLE", "recovery", onset - PRE_S + max(SHIFTS_S) + WINDOW_S, te, RECOVERY_STRIDE_S,
-              cue=ci, after=label)
+        for end in GESTURE_ENDS_S:
+            add(label, "gesture", onset + end - WINDOW_S, cue=ci, end=end)
+        slide("IDLE", "recovery", onset + RECOVERY_FROM_S, te, RECOVERY_STRIDE_S, cue=ci, after=label)
         rep.update(status="ok", onset=round(onset - tc, 3), travel=round(travel, 3),
                    windows=sum(w["source"] == "gesture" for w in windows[n_before:]))
 
@@ -180,17 +136,13 @@ def label_session(raw_dir, session):
 
 
 def load(sessions, labels_dir="data/labels", raw_dir="data/raw", sources=None):
-    """
-    Rebuild windows as arrays: X (n, WINDOW_N, 33, 4) resampled raw landmarks,
-    y (n,) labels, info (n,) dicts carrying session/source/cue so splits can be
-    made per session and augmented copies of one rep kept together.
-    """
+    """Rebuild the labelled windows (X, y, info) from the raw sessions and label files."""
     X, y, info = [], [], []
     for s in sessions:
         with open(os.path.join(labels_dir, f"{s}.json"), encoding="utf-8") as f:
             lab = json.load(f)
         if lab["params"]["HZ"] != HZ or lab["params"]["WINDOW_N"] != WINDOW_N:
-            raise SystemExit(f"{s}.json was made with different settings - rerun label_windows.py")
+            raise SystemExit(f"{s}.json was made with different settings - rerun gestures/label_windows.py")
         d = np.load(os.path.join(raw_dir, f"{s}.npz"))
         k0, _, grid, _ = resample(d["timestamps"], d["landmarks"], d["frame_ok"])
         for w in lab["windows"]:
@@ -203,22 +155,8 @@ def load(sessions, labels_dir="data/labels", raw_dir="data/raw", sources=None):
     return np.stack(X), np.array(y), info
 
 
-def normalize(X):
-    """
-    (n, T, 33, 4) -> (n, T, 33, 2): x,y relative to where the body was at the
-    start of the window, in torso lengths. Relative to the window, not the cue,
-    because a live game never knows when a cue happened; relative, not absolute,
-    because lane positions drift between sessions.
-    """
-    xy = X[..., :2]
-    ctr, torso = body_centre(xy)
-    origin = ctr[:, :3].mean(axis=1)
-    scale = np.median(torso, axis=1)
-    return (xy - origin[:, None, None]) / scale[:, None, None, None]
-
-
 def main():
-    p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    p = argparse.ArgumentParser(description="Label raw recording sessions into gesture windows.")
     p.add_argument("--raw", default="data/raw")
     p.add_argument("--out", default="data/labels")
     p.add_argument("--sessions", nargs="*", help="default: every non-dry session in --raw")
