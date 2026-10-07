@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import collections
 import os
 import time
@@ -16,7 +14,7 @@ MODEL_URL = (
     "https://storage.googleapis.com/mediapipe-models/pose_landmarker/"
     "pose_landmarker_lite/float16/1/pose_landmarker_lite.task"
 )
-MODEL_PATH = "pose_landmarker_lite.task"
+MODEL_PATH = "models/pose_landmarker_lite.task"
 
 NOSE = 0
 L_SHOULDER, R_SHOULDER = 11, 12
@@ -34,7 +32,6 @@ NAMED = {
     L_KNEE: "l_knee", R_KNEE: "r_knee",
 }
 
-# Skeleton edges to draw. Upper body only 
 CONNECTIONS = [
     (L_SHOULDER, R_SHOULDER),
     (L_SHOULDER, L_ELBOW), (L_ELBOW, L_WRIST),
@@ -44,9 +41,8 @@ CONNECTIONS = [
     (L_HIP, L_KNEE), (R_HIP, R_KNEE),
 ]
 
-VIS_THRESHOLD = 0.5  # below this, MediaPipe is guessing at the position
+VIS_THRESHOLD = 0.5
 
-# What the rest of the project imports from here.
 __all__ = [
     "MODEL_URL", "MODEL_PATH", "VIS_THRESHOLD",
     "ensure_model", "make_landmarker", "draw_skeleton", "dump_landmarks",
@@ -70,7 +66,7 @@ def ensure_model():
 
 
 def make_landmarker(model_path=None):
-    
+
     if model_path is None:
         model_path = ensure_model()
 
@@ -81,7 +77,7 @@ def make_landmarker(model_path=None):
         min_pose_detection_confidence=0.5,
         min_pose_presence_confidence=0.5,
         min_tracking_confidence=0.5,
-        output_segmentation_masks=False,  # costs time, we don't need it
+        output_segmentation_masks=False,
     )
     return mp_vision.PoseLandmarker.create_from_options(options)
 
@@ -119,7 +115,7 @@ def draw_skeleton(frame, lms, w, h):
 
 
 def dump_landmarks(lms):
-    """Print the raw structure so you can see exactly what you're working with."""
+    """Print the raw landmark structure of one detection result."""
     print("\n--- one frame of landmarks (normalized image coords) ---")
     print(f"{'idx':>4} {'name':<12} {'x':>7} {'y':>7} {'z':>7} {'vis':>6}")
     for i in sorted(NAMED):
@@ -163,7 +159,7 @@ def main():
         t0 = time.perf_counter()
         rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=rgb)
-        ts_ms = int((time.perf_counter() - t_start) * 1000)  # must increase monotonically
+        ts_ms = int((time.perf_counter() - t_start) * 1000)
         result = landmarker.detect_for_video(mp_image, ts_ms)
         t_pose = (time.perf_counter() - t0) * 1000
 
@@ -176,7 +172,6 @@ def main():
                 dump_landmarks(lms)
                 dump_next = False
 
-        
             sx = (lms[L_SHOULDER].x + lms[R_SHOULDER].x) / 2
             sy = (lms[L_SHOULDER].y + lms[R_SHOULDER].y) / 2
             hx = (lms[L_HIP].x + lms[R_HIP].x) / 2

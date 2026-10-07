@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import argparse
 import collections
 import datetime
@@ -23,9 +21,6 @@ from pose import (
 
 GESTURES = ["LEFT", "RIGHT", "JUMP", "DUCK"]
 
-# Near-misses on purpose: things a player does mid-game that must NOT fire a
-# gesture. They are the false positives that would ruin gameplay, so they have
-# to be in the data. Labelled idle downstream.
 DISTRACTORS = [
     "scratch your head", "reach to the side for a cup",
     "adjust your shirt", "look over your shoulder",
@@ -38,31 +33,23 @@ DISTRACTORS = [
 
 REST_RANGE_S = (2.0, 3.5)
 READY_S = 1.0
-# Measured on the first real session: movement starts ~1.0-1.1 s after the cue
-# and peaks as late as 3 s, so a shorter window ends mid-gesture and spills the
-# rest of the movement into the following rest, where it reads as idle.
 ACTION_S = 3.0
-TAIL_S = 3.0          # keep recording past the last cue so it isn't cut off
+TAIL_S = 3.0
 
-# Three lanes, starting in the middle, the way the game plays. LEFT and RIGHT
-# are only cued when that lane exists, so you never sidestep out of frame.
 LANES = 3
 START_LANE = 1
 LANE_STEP = {"LEFT": -1, "RIGHT": 1}
-MAX_SIDE_RUN = 4      # consecutive lane changes before a jump/duck/distractor
+MAX_SIDE_RUN = 4
 
 FRAMING_WINDOW_S = 2.0
-FRAMING_VIS = 0.6     # a joint counts as seen above this visibility
-FRAMING_PASS = 0.8    # fraction of recent frames with all four core joints seen
-FRAMING_HIP_Y = 0.70  # hips lower than this leave no room to duck in frame
-# A dark room makes the camera expose longer, which costs frame rate and blurs
-# exactly the fast part of a gesture. This is a floor for "something is wrong",
-# not a target - what matters more is that every session runs at a similar rate.
+FRAMING_VIS = 0.6
+FRAMING_PASS = 0.8
+FRAMING_HIP_Y = 0.70
 FRAMING_FPS_MIN = 20.0
 CORE_JOINTS = [L_SHOULDER, R_SHOULDER, L_HIP, R_HIP]
 
-CAMERA_GRACE_S = 2.0  # how long a read outage is tolerated before giving up
-MAX_TRIES = 1000      # attempts at a cue order satisfying every constraint
+CAMERA_GRACE_S = 2.0
+MAX_TRIES = 1000
 
 N_LANDMARKS = 33
 FONT = cv2.FONT_HERSHEY_SIMPLEX
@@ -70,8 +57,7 @@ WIN = "record_session"
 
 
 def parse_args():
-    p = argparse.ArgumentParser(description=__doc__,
-                                formatter_class=argparse.RawDescriptionHelpFormatter)
+    p = argparse.ArgumentParser(description="Record a cued gesture session from the webcam.")
     p.add_argument("--session", required=True, help="session id, used for the output filenames")
     p.add_argument("--reps", type=int, default=20, help="reps per gesture class")
     p.add_argument("--distractors", type=int, default=15, help="number of distractor cues")
@@ -88,17 +74,14 @@ def parse_args():
 
 
 def _run_key(cue):
-    # Every distractor shares one key, so a single "no key three times running"
-    # rule enforces both constraints at once: no gesture class 3x in a row and
-    # no more than 2 distractors in a row.
     return cue[1] if cue[0] == "gesture" else cue[0]
 
 
 def _completable(remaining, lane):
-    """Can the sidesteps still left be spent without walking out of the lanes?"""
+    """Check that the remaining sidesteps can be spent without leaving the lanes."""
     nl, nr = remaining["LEFT"], remaining["RIGHT"]
     if nl and nr:
-        return True   # they can always alternate
+        return True
     if nl:
         return nl <= lane
     if nr:
@@ -107,9 +90,6 @@ def _completable(remaining, lane):
 
 
 def _shuffle_no_runs(keys, rng):
-    # SIDE gets a longer allowance than the others: its directions are assigned
-    # afterwards and alternate, so a run of them is legal, but an unbounded run
-    # is a slog to perform and starves the session of jumps and ducks.
     seq = keys[:]
     rng.shuffle(seq)
     for _ in range(10 * MAX_TRIES):
@@ -125,7 +105,7 @@ def _shuffle_no_runs(keys, rng):
 
 
 def _assign_directions(slots, rng):
-    """Turn each SIDE slot into LEFT or RIGHT. None if the walk corners itself."""
+    """Turn each SIDE slot into LEFT or RIGHT, or None if the walk corners itself."""
     nl = nr = slots.count("SIDE") // 2
     lane, out = START_LANE, []
     for key in slots:
@@ -151,8 +131,6 @@ def _assign_directions(slots, rng):
 
 
 def _distractor_labels(n, rng):
-    # Without replacement until the pool is exhausted, then reshuffled, so no
-    # distractor repeats before every other one has been used.
     out = []
     while len(out) < n:
         pool = DISTRACTORS[:]
@@ -162,14 +140,6 @@ def _distractor_labels(n, rng):
 
 
 def build_cues(reps, n_distractors, rng):
-    # Distractors are interleaved with the gestures rather than run as a
-    # trailing block: a block lets slow session drift (fatigue, shifting
-    # stance, light) line up with the idle class, and the classifier would
-    # learn the drift instead of the pose.
-    # Sidesteps are placed as direction-less SIDE slots and only turned into
-    # LEFT/RIGHT afterwards. Choosing the direction at placement time made the
-    # lane rule defer sidesteps whenever the walk sat against an edge, and they
-    # then piled up at the end of the session.
     keys = (["SIDE"] * (2 * reps) + ["JUMP"] * reps + ["DUCK"] * reps
             + ["distractor"] * n_distractors)
     worst = max(reps, n_distractors)
@@ -193,13 +163,7 @@ def log_entry(kind, label, t_start, lane_from, lane_to):
 
 
 class CueScheduler:
-    """
-    Walks each cue through rest -> ready -> cue, clocked entirely by the
-    caller. The capture loop calls update(now) once per frame and the
-    scheduler just compares against the clock, so nothing ever sleeps and
-    the loop never misses a frame. Sleeping would tear a hole in the
-    recording exactly where the gesture is.
-    """
+    """Walks each cue through rest -> ready -> cue, clocked entirely by the caller."""
 
     def __init__(self, cues, rng):
         self.cues = cues
@@ -232,8 +196,6 @@ class CueScheduler:
     def _next_cue(self, now):
         self.i += 1
         if self.i == len(self.cues):
-            # Keep rolling past the last cue: movement starts about a second
-            # after it and would otherwise be cut off mid-gesture.
             self.state, self.next_t = "tail", now + TAIL_S
             return
         self.state = "rest"
@@ -250,7 +212,7 @@ class CueScheduler:
             self.state, self.next_t = "ready", now + READY_S
         elif self.state == "ready":
             self._pending = log_entry(self.kind, self.label, now, self.lane_from, self.lane_to)
-            self.state, self.next_t = "cue", None   # armed by cue_shown()
+            self.state, self.next_t = "cue", None
             return True
         elif self.state == "cue":
             self._pending["t_end"] = now
@@ -269,12 +231,7 @@ class CueScheduler:
 
 
 def make_beeper():
-    """
-    Audio must never stall the capture loop or kill a session: the beep runs
-    on its own thread and any failure downgrades to the terminal bell. One
-    output stream is opened up front because sd.play() opens a fresh stream
-    per call, which on Windows lands the beep 0.5-1 s after the cue.
-    """
+    """Return a beep function that plays on its own thread and falls back to the terminal bell."""
     stream = None
     try:
         import sounddevice as sd
@@ -310,9 +267,6 @@ def make_beeper():
 
 
 def put_text(frame, text, org, scale, color, thick):
-    # Outline by stamping black copies around the text rather than a thicker
-    # pass underneath: OpenCV 5 maps thickness to font weight, which changes
-    # the glyph advance, so a thicker pass no longer lines up with the fill.
     x, y = org
     k = thick + 1
     for dx, dy in ((-k, 0), (k, 0), (0, -k), (0, k), (-k, -k), (k, k), (-k, k), (k, -k)):
@@ -366,8 +320,6 @@ def framing_diagnosis(window):
         return "hips not in frame - step back"
     if min(seen[L_SHOULDER], seen[R_SHOULDER]) < FRAMING_PASS:
         return "shoulders not visible - centre yourself"
-    # Hips near the bottom edge means a duck pushes them out of frame, and
-    # MediaPipe then extrapolates them instead of seeing them.
     if np.nanmean(hip_y > FRAMING_HIP_Y) > 1 - FRAMING_PASS:
         return "no room to duck - tilt the camera down or step back"
     fps = framing_fps(window)
@@ -388,9 +340,6 @@ def draw_lanes(frame, lane):
 
 
 def open_camera(index):
-    # DirectShow first: on the machine this was built for, Media Foundation
-    # (OpenCV's Windows default) ran the full capture+pose+display loop at
-    # 21 fps where DirectShow held 30. The default is only a fallback.
     for api, name in ((cv2.CAP_DSHOW, "dshow"), (cv2.CAP_ANY, "default")):
         cap = cv2.VideoCapture(index, api)
         if cap.isOpened():
@@ -527,8 +476,6 @@ def main():
               "width": int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)),
               "height": int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))}
 
-    # The user reads this from 2-3 m: fullscreen by default, with a sensible
-    # windowed size to fall back to (OpenCV's Win32 default is a tiny window).
     cv2.namedWindow(WIN, cv2.WINDOW_NORMAL)
     cv2.resizeWindow(WIN, 1280, 960)
     cv2.setWindowProperty(WIN, cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
@@ -539,7 +486,7 @@ def main():
           "third of the frame. SPACE starts once the number is green. Move only when the "
           "cue appears. q aborts - everything so far is still saved. f toggles fullscreen.")
 
-    frames = []   # (t, landmark row, pose found) - one tuple so the arrays can never drift apart
+    frames = []
     stage_ms = []
     nan_row = np.full((N_LANDMARKS, 4), np.nan, dtype=np.float32)
     h, w = camera["height"] or 480, camera["width"] or 640
@@ -576,14 +523,9 @@ def main():
             t = clock()
             read_ms = (time.perf_counter() - read_t0) * 1000
             if not ok:
-                # Windows webcams occasionally hand back one bad read; only a
-                # sustained outage should end a 20-minute session.
                 if t - last_good > CAMERA_GRACE_S:
                     aborted = "camera stopped delivering frames"
                     break
-                # Still paint and read keys: otherwise the view freezes, q
-                # stops working for the whole grace window, and a dead camera
-                # spins this loop as fast as it can return failures.
                 dropout = np.zeros((h, w, 3), np.uint8)
                 draw_big(dropout, "camera dropped out", 2.0, (0, 0, 255))
                 aborted, _ = pump(dropout)
@@ -595,15 +537,11 @@ def main():
             h, w = frame.shape[:2]
 
             rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-            # MediaPipe rejects a timestamp that doesn't move forward, and two
-            # frames can land in the same millisecond - nudge rather than drop.
             ms = max(int(t * 1000), last_ms + 1)
             last_ms = ms
             pose_t0 = time.perf_counter()
             result = landmarker.detect_for_video(
                 mp.Image(image_format=mp.ImageFormat.SRGB, data=rgb), ms)
-            # Split the loop time so a slow session says whether the camera is
-            # pacing it (long read) or the model is (long pose).
             stage_ms.append((read_ms, (time.perf_counter() - pose_t0) * 1000))
 
             if result.pose_landmarks:
@@ -612,9 +550,6 @@ def main():
                 draw_skeleton(frame, lms, w, h)
             else:
                 lms, row = None, nan_row
-            # A frame with no pose still gets a row (all NaN) so the arrays stay
-            # index-aligned with timestamps. Skipping it would shift every
-            # downstream time lookup.
             frames.append((t, row, lms is not None))
 
             show_cue = False
@@ -645,7 +580,6 @@ def main():
                 elif sched.state == "cue":
                     draw_big(frame, sched.label, 4.0 if sched.kind == "gesture" else 3.0, (0, 255, 255))
                 if sched.state in ("rest", "ready", "cue"):
-                    # during the cue, highlight where you should end up
                     draw_lanes(frame, sched.lane_to if sched.state == "cue" else sched.lane_from)
                 status = f"cue {min(sched.i + 1, len(cues))} / {len(cues)}   {sched.state}"
 
@@ -656,8 +590,6 @@ def main():
                 beep()
             aborted, key = pump(frame)
             if show_cue:
-                # waitKey is what actually paints the window, so this is the
-                # first instant the cue is visible - the action window runs from here.
                 sched.cue_shown(clock())
             if aborted:
                 break
@@ -678,8 +610,6 @@ def main():
         aborted = f"crashed: {e!r}"
         traceback.print_exc()
 
-    # Write before releasing anything: camera teardown can take a while and a
-    # second Ctrl-C there must not cost the recording.
     ts = np.array([f[0] for f in frames], dtype=np.float64)
     lm = np.stack([f[1] for f in frames]) if frames else np.zeros((0, N_LANDMARKS, 4), dtype=np.float32)
     ok = np.array([f[2] for f in frames], dtype=bool)

@@ -1,0 +1,5 @@
+numpy>=2.0
+opencv-python>=5.0
+mediapipe==1.0.1
+sounddevice>=0.5
+torch>=2.0

@@ -1,11 +1,9 @@
-# Virtual environments
 myenv/
 venv/
 .venv/
 env/
 ENV/
 
-# Python bytecode / caches
 __pycache__/
 *.py[cod]
 *$py.class
@@ -13,9 +11,10 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 
-# Editor / OS noise
 .vscode/
 .idea/
 *.swp
 .DS_Store
 Thumbs.db
+
+node_modules/
