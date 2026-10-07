@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Subway Surfers - gesture edition</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+  <canvas id="glcanvas"></canvas>
+
+  <div id="GameScore" class="hud">
+    <div class="coins"><span class="coin-icon"></span><span class="score_gain">0</span><span class="of">/ 100</span></div>
+    <div class="mode" id="hud_mode"></div>
+  </div>
+
+  <div id="ModalBox" class="modal">
+    <div class="modal-content">
+      <p class="game_title">Subway Surfers</p>
+      <p class="subtitle" id="subtitle">gesture edition</p>
+      <p class="game_score"></p>
+      <div class="settings" id="settings">
+        <label>Difficulty
+          <select id="difficulty">
+            <option value="gesture">Gesture (Kinect-style)</option>
+            <option value="normal">Normal</option>
+            <option value="classic">Classic (close to the original)</option>
+          </select>
+        </label>
+        <label>Graphics
+          <select id="quality">
+            <option value="low">Low - use this with the camera</option>
+            <option value="standard">Standard</option>
+            <option value="high">High - real shadows</option>
+          </select>
+        </label>
+      </div>
+      <button class="play" id="arrow">Play</button>
+      <button class="play" id="play_again">Play again</button>
+      <p class="hint">Step left or right to change lanes, jump to jump - or use the arrow keys and Space.</p>
+    </div>
+  </div>
+</body>
+
+<script type="text/javascript">
+  var params = new URLSearchParams(location.search);
+  var modal = document.getElementById('ModalBox');
+  var score = document.getElementById('GameScore');
+  var difficultyPicker = document.getElementById('difficulty');
+  var qualityPicker = document.getElementById('quality');
+  var graphicsFailed = false;
+
+  function saved(key, fallback) {
+    try {
+      return localStorage.getItem(key) || fallback;
+    } catch (e) {
+      return fallback;
+    }
+  }
+
+  function save(key, value) {
+    try {
+      localStorage.setItem(key, value);
+    } catch (e) {}
+  }
+
+  difficultyPicker.value = params.get('difficulty') || saved('difficulty', 'gesture');
+  qualityPicker.value = params.get('quality') || saved('quality', 'standard');
+  qualityPicker.addEventListener('change', function() {
+    save('quality', qualityPicker.value);
+    document.location.reload();
+  });
+
+  var music = new sound("assets/bgmusic.mp3");
+
+  function start() {
+    modal.style.display = "flex";
+    document.getElementById('play_again').style.display = "none";
+  }
+
+  document.getElementById("arrow").addEventListener("click", start_box);
+  document.getElementById("play_again").addEventListener("click", restart_game);
+
+  function start_box() {
+    if (graphicsFailed) return;
+    setDifficulty(difficultyPicker.value);
+    save('difficulty', difficultyPicker.value);
+    spawner_reset();
+    autopilot = params.get('autopilot') === '1';
+    document.getElementById('hud_mode').textContent = CONFIG.label + (autopilot ? " - autopilot" : "");
+    game_start = true;
+    var warp = +params.get('warp') || 0;
+    for (var i = 0; i < warp / STEP && !game_over; i++) {
+      if (autopilot) autopilot_tick();
+      step(null);
+    }
+    if (!params.has('autostart')) music.play();
+    modal.style.display = "none";
+    score.style.display = "flex";
+  }
+
+  function restart_game() {
+    document.location.reload();
+  }
+
+  function update_score() {
+    document.querySelector(".score_gain").textContent = objects[0].score;
+  }
+
+  function Game_over() {
+    modal.style.display = "flex";
+    score.style.display = "none";
+    document.querySelector(".game_title").textContent = game_over ? "Game Over" : "You Won!";
+    document.getElementById('subtitle').textContent = CONFIG.label;
+    var y = document.querySelector(".game_score");
+    y.textContent = "Coins: " + objects[0].score + "  ·  late dodges forgiven: " + saves;
+    y.style.display = "block";
+    document.getElementById('settings').style.display = "none";
+    document.getElementById('arrow').style.display = "none";
+    document.getElementById('play_again').style.display = "inline-block";
+    music.stop();
+  }
+
+  // Shows a message instead of a blank page when WebGL can't start or the GPU resets.
+  function graphics_problem(text) {
+    graphicsFailed = true;
+    game_start = false;
+    document.getElementById('glcanvas').style.visibility = "hidden";
+    modal.style.display = "flex";
+    score.style.display = "none";
+    document.querySelector(".game_title").textContent = "Graphics problem";
+    document.getElementById('subtitle').textContent = "the game can't draw";
+    var y = document.querySelector(".game_score");
+    y.textContent = text;
+    y.style.display = "block";
+    document.getElementById('arrow').style.display = "none";
+    var reload = document.getElementById('play_again');
+    reload.textContent = "Reload";
+    reload.style.display = "inline-block";
+    music.stop();
+  }
+
+  function sound(src) {
+    this.sound = document.createElement("audio");
+    this.sound.src = src;
+    this.sound.setAttribute("preload", "auto");
+    this.sound.style.display = "none";
+    document.body.appendChild(this.sound);
+    this.play = function() {
+      this.sound.play().catch(function() {});
+    }
+    this.stop = function() {
+      this.sound.pause();
+    }
+  }
+
+  if (params.get('debug') === '1') {
+    window.addEventListener('error', function(e) { document.title = 'ERROR: ' + e.message; });
+    var consoleError = console.error;
+    console.error = function() {
+      document.title = 'ERROR: ' + Array.prototype.join.call(arguments, ' ');
+      consoleError.apply(console, arguments);
+    };
+    setInterval(function() {
+      if (document.title.indexOf('ERROR') === 0) return;
+      var s = Scene.stats();
+      document.title = 'OK draw calls ' + s.calls + ', triangles ' + s.triangles + ', coins ' + objects[0].score +
+        ', game time ' + simTime.toFixed(1) + ' s' + (game_over ? ', GAME OVER' : '');
+    }, 500);
+  }
+
+  start();
+</script>
+<script src="./libs/three.min.js"></script>
+<script src="./libs/jquery-3.3.1.min.js"></script>
+
+<script src="./src/utility.js"></script>
+<script src="./src/config.js"></script>
+<script src="./src/rules.js"></script>
+<script src="./src/spawner.js"></script>
+<script src="./src/finishline.js"></script>
+<script src="./src/boost.js"></script>
+<script src="./src/obstacle.js"></script>
+<script src="./src/barrier.js"></script>
+<script src="./src/coin.js"></script>
+<script src="./src/police.js"></script>
+<script src="./src/player.js"></script>
+<script src="./src/keyhandler.js"></script>
+<script src="./src/autopilot.js"></script>
+<script src="./src/scene.js"></script>
+<script src="./src/main.js"></script>
+<script>
+  main(qualityPicker.value);
+  if (params.has('autostart')) start_box();
+</script>
+
+</html>

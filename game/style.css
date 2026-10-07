@@ -1,0 +1,168 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #8cc8f2;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+#glcanvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+.hud {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  display: none;
+  justify-content: space-between;
+  align-items: flex-start;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.coins {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 18px 8px 10px;
+  border-radius: 999px;
+  background: rgba(20, 30, 60, 0.55);
+  color: #fff;
+  font-size: 28px;
+  font-weight: 900;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.35);
+}
+
+.coins .of {
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.coin-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #fff3a6, #ffc928 45%, #c98a00);
+  box-shadow: inset 0 0 0 3px #e0a400;
+}
+
+.mode {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(20, 30, 60, 0.45);
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  background: rgba(10, 20, 40, 0.35);
+}
+
+.modal-content {
+  min-width: 340px;
+  max-width: 460px;
+  padding: 28px 34px 24px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  animation: drop 0.5s ease-out;
+}
+
+.game_title {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 900;
+  color: #ffb703;
+  -webkit-text-stroke: 2px #1d3557;
+  text-shadow: 0 4px 0 #1d3557;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  margin: 6px 0 14px;
+  color: #1d3557;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+.game_score {
+  display: none;
+  margin: 0 0 16px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1d3557;
+}
+
+.settings {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 18px;
+  text-align: left;
+  color: #1d3557;
+  font-weight: bold;
+}
+
+.settings label {
+  display: grid;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.settings select {
+  padding: 7px 8px;
+  border-radius: 10px;
+  border: 2px solid #c9d6e3;
+  font-size: 14px;
+  background: #fff;
+}
+
+.play {
+  display: inline-block;
+  padding: 12px 46px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(#ffd23f, #ffb703);
+  box-shadow: 0 5px 0 #c98a00;
+  color: #1d3557;
+  font-size: 22px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.play:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #c98a00;
+}
+
+.hint {
+  margin: 16px 0 0;
+  font-size: 12px;
+  color: #4a5a70;
+}
+
+@keyframes drop {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
