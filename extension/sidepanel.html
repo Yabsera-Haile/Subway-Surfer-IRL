@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Gesture controls</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <header>
+    <h1>Gesture controls</h1>
+    <button id="start" type="button">Start camera</button>
+  </header>
+
+  <div class="stage">
+    <canvas id="view" width="320" height="240"></canvas>
+    <div id="flash" class="flash" hidden></div>
+  </div>
+  <video id="video" class="offstage" playsinline muted></video>
+
+  <p id="status" class="status">Loading…</p>
+  <button id="grant" type="button" hidden>Grant camera access</button>
+
+  <section>
+    <h2>What it sees</h2>
+    <div id="bars" class="bars"></div>
+  </section>
+
+  <section>
+    <h2>Game</h2>
+    <p id="target" class="status">Not looking for a game yet.</p>
+    <div class="row">
+      <button id="find" type="button">Find game in this tab</button>
+      <button id="test" type="button">Test keys</button>
+    </div>
+    <label class="row"><input id="send" type="checkbox" checked> Send key presses to the game</label>
+    <label class="row">Keys
+      <select id="keymap">
+        <option value="arrows">Lane runner: arrow keys</option>
+        <option value="wasd">Lane runner: W A S D</option>
+        <option value="dino-up">Dino: ↑ jump, ↓ duck (held)</option>
+        <option value="dino-space">Dino: Space jump, ↓ duck (held)</option>
+      </select>
+    </label>
+  </section>
+
+  <section>
+    <h2>Model &amp; speed</h2>
+    <label class="row">Model
+      <select id="model">
+        <option value="baseline">Baseline (motion features)</option>
+        <option value="cnn">CNN</option>
+        <option value="gru">GRU</option>
+      </select>
+    </label>
+    <label class="row">Responsiveness
+      <select id="speed">
+        <option value="balanced">Balanced</option>
+        <option value="fast">Fast</option>
+        <option value="fastest">Fastest</option>
+      </select>
+    </label>
+    <p id="modelinfo" class="status"></p>
+    <label class="row">Pose engine
+      <select id="engine">
+        <option value="auto">Auto (measure on Start)</option>
+        <option value="GPU">GPU</option>
+        <option value="CPU">CPU</option>
+      </select>
+    </label>
+  </section>
+
+  <p class="hint">After starting, click once inside the game so it has focus, then step back into your lane.</p>
+
+  <script type="module" src="sidepanel.js"></script>
+</body>
+</html>

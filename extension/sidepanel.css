@@ -1,0 +1,35 @@
+:root {
+  color-scheme: light dark;
+  --bg: #f6f6f4;
+  --fg: #1d1d1b;
+  --muted: #6b6b66;
+  --line: #d9d9d4;
+  --accent: #2f7d4f;
+  --warn: #b3261e;
+  --bar: #2f7d4f;
+  --bar-idle: #9a9a94;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #1b1b1a; --fg: #ececea; --muted: #a3a39d; --line: #3a3a37; --accent: #6cc28f; --warn: #ff8a80; --bar: #6cc28f; --bar-idle: #6e6e69; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; padding: 12px 14px 20px; background: var(--bg); color: var(--fg); font: 13px/1.4 system-ui, sans-serif; }
+header { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 10px; }
+h1 { font-size: 15px; margin: 0; }
+h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 16px 0 6px; }
+button, select { font: inherit; padding: 5px 10px; border: 1px solid var(--line); border-radius: 6px; background: transparent; color: inherit; cursor: pointer; }
+button:hover { border-color: var(--accent); }
+.stage { position: relative; }
+canvas { width: 100%; height: auto; display: block; border-radius: 8px; background: #000; }
+.flash { position: absolute; inset: 0; display: grid; place-items: center; font-size: 34px; font-weight: 700; color: #fff; text-shadow: 0 2px 8px #000; pointer-events: none; }
+.status { color: var(--muted); margin: 8px 0; min-height: 1.4em; }
+.status.error { color: var(--warn); }
+.status.ok { color: var(--accent); }
+.bars { display: grid; grid-template-columns: 44px 1fr 40px; gap: 4px 8px; align-items: center; }
+.bars .track { height: 10px; background: var(--line); border-radius: 5px; overflow: hidden; }
+.bars .fill { height: 100%; width: 0; background: var(--bar); transition: width 80ms linear; }
+.bars .fill.idle { background: var(--bar-idle); }
+.bars .num { text-align: right; font-variant-numeric: tabular-nums; color: var(--muted); }
+.row { display: flex; align-items: center; gap: 8px; margin: 6px 0; flex-wrap: wrap; }
+.hint { color: var(--muted); font-size: 12px; margin-top: 16px; }
+.offstage { position: fixed; left: 0; top: 0; width: 2px; height: 2px; opacity: 0; pointer-events: none; }
